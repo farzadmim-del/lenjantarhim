@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+
+<html class="dark" dir="rtl" lang="fa"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>صفحه اصلی</title>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+            extend: {
+                colors: {
+                "primary": "#1152d4",
+                "background-light": "#f6f6f8",
+                "background-dark": "#101622",
+                },
+                fontFamily: {
+                "display": ["Public Sans", "Tahoma", "Arial", "sans-serif"]
+                },
+                borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+            },
+            },
+        }
+    </script>
+<style>
+        /* Custom scrollbar hiding for clean mobile look */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display antialiased min-h-screen pb-20">
+<!-- Top App Bar -->
+<div class="sticky top-0 z-10 flex items-center bg-background-light dark:bg-background-dark p-4 pb-2 justify-between border-b border-gray-200 dark:border-gray-800">
+<h2 class="text-slate-900 dark:text-white text-xl font-bold leading-tight tracking-[-0.015em] flex-1">صفحه اصلی</h2>
+<div class="flex items-center justify-end gap-3">
+<button class="flex items-center justify-center rounded-full h-10 w-10 bg-transparent text-slate-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<button class="flex items-center justify-center rounded-full h-10 w-10 bg-transparent text-slate-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors">
+<span class="material-symbols-outlined">search</span>
+</button>
+</div>
+</div>
+<!-- Recent Deceased Section (Carousel) -->
+<div class="flex flex-col w-full pt-4">
+<div class="flex items-center justify-between px-4 pb-3">
+<h3 class="text-slate-900 dark:text-white tracking-tight text-lg font-bold leading-tight">متوفیان اخیر</h3>
+<button class="text-primary text-sm font-medium hover:text-blue-400 transition-colors">مشاهده همه</button>
+</div>
+<div class="flex w-full overflow-x-auto no-scrollbar px-4 pb-2">
+<div class="flex min-h-min flex-row items-start justify-start gap-4">
+<!-- Card 1 -->
+<div class="flex flex-col gap-2 w-28 shrink-0">
+<div class="relative w-full aspect-[3/4] overflow-hidden rounded-xl shadow-lg group">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent z-10"></div>
+<div class="w-full h-full bg-center bg-no-repeat bg-cover transition-transform duration-500 group-hover:scale-110" data-alt="Portrait of an elderly man with a peaceful expression" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBhCoi24pIFzgKFs-B-k1wrbUuz_9lXkWG5PCoamJbq2gFhsdFrhtYi98uW8dOQyCkFf-ekK20ZD5MFWVeOgCLXC1z_KNe-BRTyPSgKw1MD3Dkk-wCNAOKVVj3jyeKCKYb7yVGlQ-ClX_LqG4BwWimeSz5MDti4tXqGQTNB0p4jj-npBMznSOAqVq4pOeMVtl4GmKEGOf71ev-LcjwVsUPAekOSEnW99DzzuCYtNPegjDkFh-q9jccS_C5ReAH5930xsr9LpWEBviQ");'>
+</div>
+<div class="absolute bottom-2 right-2 z-20">
+<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-white/20 text-white backdrop-blur-sm">امروز</span>
+</div>
+</div>
+<div class="text-right">
+<p class="text-slate-900 dark:text-white text-sm font-semibold leading-tight truncate">مرحوم علی محمدی</p>
+<p class="text-gray-500 dark:text-gray-400 text-xs mt-0.5">قطعه ۳۰۲، ردیف ۴</p>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="flex flex-col gap-2 w-28 shrink-0">
+<div class="relative w-full aspect-[3/4] overflow-hidden rounded-xl shadow-lg group">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent z-10"></div>
+<div class="w-full h-full bg-center bg-no-repeat bg-cover transition-transform duration-500 group-hover:scale-110" data-alt="Portrait of an elderly woman wearing a headscarf" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCfSZq2ofSuqZ0Ys75LT5SsuJ7I-IS68xHmq6hC_ZeezpEOnER6o_5p3dBhen9vr6wviT_412i4MMYh_HK0bLjfDu1TQoQ1a4g_Ur_2SZElVXm1rIrQGNZJLlfkLq4dQEldIJLBranC2vcLFkZ_U9bGhUOhSAqD6ycmhp-BRup6Nb7TBA0ArgtYDMhYg6CB8A7qPcUC78_5FOXVQnU40tVaID7TfeVdbAE-FNf4wPJFzWhsGnJj--zwXNPMAVQxV6kTOyv7xD1ltSo");'>
+</div>
+</div>
+<div class="text-right">
+<p class="text-slate-900 dark:text-white text-sm font-semibold leading-tight truncate">بانو زهرا حسینی</p>
+<p class="text-gray-500 dark:text-gray-400 text-xs mt-0.5">قطعه ۱۱۰، ردیف ۱۲</p>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="flex flex-col gap-2 w-28 shrink-0">
+<div class="relative w-full aspect-[3/4] overflow-hidden rounded-xl shadow-lg group">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent z-10"></div>
+<div class="w-full h-full bg-center bg-no-repeat bg-cover transition-transform duration-500 group-hover:scale-110" data-alt="Portrait of a middle-aged man smiling gently" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAc_AnOtpWndCEKxQpIcJBcGtrmH87aIAyAr1S2usWQk_1T79fS5D-sDBQdm_ZwatvcC0YlHOvUL-5Sn17tvEM7bJHihm3MHhUCaN-CBDrUdysMJBYxuCK7fHU3jk39rC91SAnfoH5KqgfcsKlsQLmkf9Bw3U5J3jbM3FTgcjv_OL9Vq58iZM4Zinrir_BC4qUG6KjvnnYiTzXIhe_x8bVsmYBNLQcNgBHp-iMnAWlK34Au9M3yaF-nwIyMTUgkC3-Qq2L9rYPDcWM");'>
+</div>
+</div>
+<div class="text-right">
+<p class="text-slate-900 dark:text-white text-sm font-semibold leading-tight truncate">رضا کریمی</p>
+<p class="text-gray-500 dark:text-gray-400 text-xs mt-0.5">قطعه ۲۰۵، ردیف ۸</p>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="flex flex-col gap-2 w-28 shrink-0">
+<div class="relative w-full aspect-[3/4] overflow-hidden rounded-xl shadow-lg group">
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent z-10"></div>
+<div class="w-full h-full bg-center bg-no-repeat bg-cover transition-transform duration-500 group-hover:scale-110" data-alt="Abstract silhouette representing a person" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBpaCRL1vw2flqZqLof_RoDqLfZqYVUraWBc1Ae1BJ0WL6SbJtIVFaHySD_P3bb1RH7WqoHTcJQH0zNf06FL8zMIqwWSMPs6_9M8vws8N3UZl_u6xQvTZKIykVHdSSUvXFHDOPD_pUdVcl5Amp_2X7tdtPe-BtT89_r9HzMOKdTKDtZcY6sLkGw83HHuHL6j3BoKRhM96Z9EjP2aSlJVJpo3Rj1WpPd_T_EhdIy-6B43ZZZEHIjRmg64k0uzlWaOBfaww-ByGygW88");'>
+</div>
+</div>
+<div class="text-right">
+<p class="text-slate-900 dark:text-white text-sm font-semibold leading-tight truncate">حاج احمد جلالی</p>
+<p class="text-gray-500 dark:text-gray-400 text-xs mt-0.5">قطعه ۳۰۰، ردیف ۲</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Divider -->
+<div class="h-px bg-gray-200 dark:bg-gray-800 mx-4 my-4"></div>
+<!-- Obituary Notices List -->
+<div class="flex flex-col w-full">
+<div class="flex items-center justify-between px-4 pb-2">
+<h3 class="text-slate-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">آگهی‌های ترحیم</h3>
+</div>
+<div class="flex flex-col gap-4 px-4 py-2">
+<!-- List Item 1 -->
+<div class="flex gap-4 p-3 bg-white dark:bg-[#1A2230] rounded-xl shadow-sm border border-gray-100 dark:border-gray-800">
+<div class="bg-center bg-no-repeat bg-cover rounded-lg w-20 h-20 shrink-0" data-alt="Black ribbon on a white flower background" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAOZ58zv9X8ud4mUJ7oQ8MBf3eAjrNbahvV4g2JzNVsaw0AgHwzoJRWgkLubQc9xoxTkUjaTwqfuhkEBShUj1we5h18_IgVUicZpD5-lwKqbr38LBM-AE0ZVINIRtpCRUY4RdTxt2L2H1QBGiJRNvhFQkANA0H2S-hxrjXXPOAuFf2D9xwo6WI7Po7lHxG-_VI24cbL3rRMJRHl-UCvWn2IamyoM_ytkuaztHSwDpa_oMi2gUgn5DSYfyjWB3oHgi6VVnINTZ4y66Q");'>
+</div>
+<div class="flex flex-1 flex-col justify-start gap-1">
+<div class="flex justify-between items-start">
+<p class="text-slate-900 dark:text-white text-base font-bold leading-normal">بانو مریم کاظمی</p>
+<span class="text-xs text-primary bg-primary/10 px-2 py-0.5 rounded-full">ترحیم</span>
+</div>
+<p class="text-gray-500 dark:text-gray-400 text-xs leading-normal line-clamp-2">
+                        مراسم ترحیم آن مرحومه روز جمعه مورخ ۱۴۰۲/۰۸/۱۲ از ساعت ۱۴ الی ۱۶ در مسجد جامع شهر برگزار می‌گردد.
+                    </p>
+<div class="flex items-center gap-1 mt-1 text-gray-400 dark:text-gray-500 text-xs">
+<span class="material-symbols-outlined text-[14px]">calendar_today</span>
+<span>۱۴۰۲/۰۸/۱۲</span>
+</div>
+</div>
+</div>
+<!-- List Item 2 -->
+<div class="flex gap-4 p-3 bg-white dark:bg-[#1A2230] rounded-xl shadow-sm border border-gray-100 dark:border-gray-800">
+<div class="bg-center bg-no-repeat bg-cover rounded-lg w-20 h-20 shrink-0" data-alt="Candle burning in dark background" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDyXuOjGU64eEzr2LcTld9Ojqzs79UcsM5Gaqi4mzbypSNulft0eduPnjFMp8jIRaIxYsMMs9shWo_UeGJ1QKOWuHFShiMlsncY97bEj9ql5e-G2-ELbQWdDNwK3F-LJH-eRBrAqm5Oa5gZsFPLKaKUk5Tvb6nOg0gzj2nh3LA31Pw9GNNfrtWL3JQjM0oFy_okRGIhzi9Am302v-LsEbS1oYvC-RbSUBBQFcjUZbmSZqVkxkJFncRf62rl0mTm8pEYXDrA203QqlQ");'>
+</div>
+<div class="flex flex-1 flex-col justify-start gap-1">
+<div class="flex justify-between items-start">
+<p class="text-slate-900 dark:text-white text-base font-bold leading-normal">کربلایی حسین احمدی</p>
+<span class="text-xs text-green-600 bg-green-500/10 dark:text-green-400 px-2 py-0.5 rounded-full">چهلم</span>
+</div>
+<p class="text-gray-500 dark:text-gray-400 text-xs leading-normal line-clamp-2">
+                        با نهایت تاسف و تاثر چهلمین روز درگذشت پدر عزیزمان را به اطلاع دوستان و آشنایان می‌رسانیم.
+                    </p>
+<div class="flex items-center gap-1 mt-1 text-gray-400 dark:text-gray-500 text-xs">
+<span class="material-symbols-outlined text-[14px]">calendar_today</span>
+<span>۱۴۰۲/۰۸/۱۰</span>
+</div>
+</div>
+</div>
+<!-- List Item 3 -->
+<div class="flex gap-4 p-3 bg-white dark:bg-[#1A2230] rounded-xl shadow-sm border border-gray-100 dark:border-gray-800">
+<div class="bg-center bg-no-repeat bg-cover rounded-lg w-20 h-20 shrink-0" data-alt="White flowers arrangement" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCCjjOSSOoc_LdKVnLT94GX0rV_LDXZickI-thF4egUMd_4kiSzFfx_KA8RRZemBVSHlmiNEs7YXBptCsCPBR7YPqKW_9wiy0OXJJw-q_o6-nCzi3mF535FYq7N9r3WoneGhvGb76-9RKEEQ5XYIgXhC6wBfUjU1E98xj9aImuJ7lgXezfYfNwlUI6wWBkWkgHLx_1BlgqsULqiRCqlCTpEPszjbcSgDaasPgnFUUn4QJF0DV5IkgU3qNN1fMSvrYWJ4HGIoguSN-s");'>
+</div>
+<div class="flex flex-1 flex-col justify-start gap-1">
+<div class="flex justify-between items-start">
+<p class="text-slate-900 dark:text-white text-base font-bold leading-normal">استاد محمد رضا شجری</p>
+<span class="text-xs text-amber-600 bg-amber-500/10 dark:text-amber-400 px-2 py-0.5 rounded-full">سالگرد</span>
+</div>
+<p class="text-gray-500 dark:text-gray-400 text-xs leading-normal line-clamp-2">
+                        مراسم اولین سالگرد درگذشت آن مرحوم بر سر مزار ایشان برگزار خواهد شد. حضور شما باعث تسلی خاطر بازماندگان است.
+                    </p>
+<div class="flex items-center gap-1 mt-1 text-gray-400 dark:text-gray-500 text-xs">
+<span class="material-symbols-outlined text-[14px]">calendar_today</span>
+<span>۱۴۰۲/۰۸/۰۸</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Navigation Bar -->
+<div class="fixed bottom-0 w-full bg-background-light dark:bg-[#141b2a] border-t border-gray-200 dark:border-gray-800 pb-safe pt-2 px-6">
+<div class="flex justify-between items-center h-16">
+<button class="flex flex-col items-center justify-center gap-1 text-primary">
+<span class="material-symbols-outlined text-2xl fill-1">home</span>
+<span class="text-[10px] font-medium">خانه</span>
+</button>
+<button class="flex flex-col items-center justify-center gap-1 text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300">
+<span class="material-symbols-outlined text-2xl">map</span>
+<span class="text-[10px] font-medium">نقشه</span>
+</button>
+<button class="flex flex-col items-center justify-center gap-1 text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300">
+<span class="material-symbols-outlined text-2xl">bookmark</span>
+<span class="text-[10px] font-medium">ذخیره‌ها</span>
+</button>
+<button class="flex flex-col items-center justify-center gap-1 text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300">
+<span class="material-symbols-outlined text-2xl">person</span>
+<span class="text-[10px] font-medium">پروفایل</span>
+</button>
+</div>
+</div>
+</body></html>

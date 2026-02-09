@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html class="dark" dir="rtl" lang="fa"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>صفحه اصلی (پالایش شده)</title>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "gold": {
+                            300: "#FFE59E",
+                            400: "#FAD678",
+                            500: "#D4AF37", // Main Gold
+                            600: "#B59020",
+                            900: "#423204",
+                        },
+                        "silver": {
+                             300: "#CBD5E1",
+                             400: "#94A3B8",
+                             500: "#64748B",
+                             600: "#475569",
+                        },
+                        "background-dark": "#050505", // Deeper black for seriousness
+                        "card-dark": "#121212", // Very dark grey for cards
+                        "card-lighter": "#1c1c1c",
+                    },
+                    fontFamily: {
+                        "display": ["Vazirmatn", "Tahoma", "Arial", "sans-serif"],
+                        "body": ["Vazirmatn", "Tahoma", "Arial", "sans-serif"]
+                    },
+                    boxShadow: {
+                        'glow': '0 0 15px rgba(212, 175, 55, 0.15)',
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; }
+        .material-symbols-outlined.fill-1 { font-variation-settings: 'FILL' 1; }
+        body { font-family: 'Vazirmatn', sans-serif; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-gray-50 dark:bg-background-dark font-body antialiased min-h-screen pb-28 selection:bg-gold-500/30 selection:text-gold-300 text-slate-900 dark:text-gray-200">
+<div class="sticky top-0 z-30 flex items-center bg-white/80 dark:bg-background-dark/80 backdrop-blur-xl px-6 py-5 justify-between border-b border-gray-200 dark:border-white/5 transition-colors duration-300">
+<div>
+<h2 class="text-slate-900 dark:text-white text-2xl font-bold leading-tight tracking-tight">آرامستان</h2>
+<p class="text-xs text-gray-500 dark:text-gray-400 mt-0.5 font-light">یادبود و آگهی‌های ترحیم</p>
+</div>
+<div class="flex items-center justify-end gap-3">
+<button class="flex items-center justify-center rounded-full h-10 w-10 bg-gray-100 dark:bg-white/5 text-slate-600 dark:text-gray-300 hover:bg-gold-500/10 hover:text-gold-500 dark:hover:text-gold-400 border border-transparent hover:border-gold-500/30 transition-all duration-300">
+<span class="material-symbols-outlined text-[20px]">notifications</span>
+</button>
+<button class="flex items-center justify-center rounded-full h-10 w-10 bg-gray-100 dark:bg-white/5 text-slate-600 dark:text-gray-300 hover:bg-gold-500/10 hover:text-gold-500 dark:hover:text-gold-400 border border-transparent hover:border-gold-500/30 transition-all duration-300">
+<span class="material-symbols-outlined text-[20px]">search</span>
+</button>
+</div>
+</div>
+<div class="flex flex-col w-full pt-8 gap-10">
+<div class="flex flex-col gap-5">
+<div class="flex items-center justify-between px-6">
+<h3 class="text-slate-900 dark:text-gold-400 tracking-tight text-xl font-bold flex items-center gap-2">
+<span class="w-1.5 h-6 rounded-full bg-gold-500"></span>
+                    متوفیان اخیر
+                </h3>
+<button class="text-gray-500 dark:text-gray-500 text-xs font-medium hover:text-gold-500 dark:hover:text-gold-400 transition-colors flex items-center gap-1 bg-white/5 px-3 py-1.5 rounded-full">
+                    مشاهده همه
+                    <span class="material-symbols-outlined text-[16px] rotate-180">arrow_right_alt</span>
+</button>
+</div>
+<div class="flex w-full overflow-x-auto no-scrollbar px-6 pb-2 snap-x snap-mandatory">
+<div class="flex min-h-min flex-row items-start justify-start gap-4">
+<div class="snap-start flex flex-col w-40 shrink-0 group cursor-pointer relative">
+<div class="relative w-full aspect-[3/4] overflow-hidden rounded-xl shadow-lg border-2 border-transparent dark:border-white/5 group-hover:border-gold-500/40 transition-all duration-500 bg-card-dark">
+<div class="absolute inset-0 border border-white/5 rounded-xl z-20 pointer-events-none"></div>
+<div class="w-full h-full bg-center bg-no-repeat bg-cover transition-transform duration-700 group-hover:scale-105 filter grayscale-[20%] group-hover:grayscale-0" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBhCoi24pIFzgKFs-B-k1wrbUuz_9lXkWG5PCoamJbq2gFhsdFrhtYi98uW8dOQyCkFf-ekK20ZD5MFWVeOgCLXC1z_KNe-BRTyPSgKw1MD3Dkk-wCNAOKVVj3jyeKCKYb7yVGlQ-ClX_LqG4BwWimeSz5MDti4tXqGQTNB0p4jj-npBMznSOAqVq4pOeMVtl4GmKEGOf71ev-LcjwVsUPAekOSEnW99DzzuCYtNPegjDkFh-q9jccS_C5ReAH5930xsr9LpWEBviQ");'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent z-10 opacity-90"></div>
+<div class="absolute bottom-0 left-0 right-0 p-3 z-20 text-right">
+<p class="text-white text-base font-bold leading-tight drop-shadow-md">مرحوم علی محمدی</p>
+<div class="flex items-center gap-1 mt-1 opacity-80">
+<span class="material-symbols-outlined text-[14px] text-gold-400">event</span>
+<p class="text-gray-300 text-[11px] font-medium tracking-wide">۱۴۰۲/۰۸/۱۲</p>
+</div>
+</div>
+<div class="absolute top-2 right-2 z-20">
+<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-gold-500 text-black shadow-lg shadow-gold-500/20">امروز</span>
+</div>
+</div>
+</div>
+<div class="snap-start flex flex-col w-40 shrink-0 group cursor-pointer relative">
+<div class="relative w-full aspect-[3/4] overflow-hidden rounded-xl shadow-lg border-2 border-transparent dark:border-white/5 group-hover:border-gold-500/40 transition-all duration-500 bg-card-dark">
+<div class="absolute inset-0 border border-white/5 rounded-xl z-20 pointer-events-none"></div>
+<div class="w-full h-full bg-center bg-no-repeat bg-cover transition-transform duration-700 group-hover:scale-105 filter grayscale-[20%] group-hover:grayscale-0" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCfSZq2ofSuqZ0Ys75LT5SsuJ7I-IS68xHmq6hC_ZeezpEOnER6o_5p3dBhen9vr6wviT_412i4MMYh_HK0bLjfDu1TQoQ1a4g_Ur_2SZElVXm1rIrQGNZJLlfkLq4dQEldIJLBranC2vcLFkZ_U9bGhUOhSAqD6ycmhp-BRup6Nb7TBA0ArgtYDMhYg6CB8A7qPcUC78_5FOXVQnU40tVaID7TfeVdbAE-FNf4wPJFzWhsGnJj--zwXNPMAVQxV6kTOyv7xD1ltSo");'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent z-10 opacity-90"></div>
+<div class="absolute bottom-0 left-0 right-0 p-3 z-20 text-right">
+<p class="text-white text-base font-bold leading-tight drop-shadow-md">بانو زهرا حسینی</p>
+<div class="flex items-center gap-1 mt-1 opacity-80">
+<span class="material-symbols-outlined text-[14px] text-gold-400">event</span>
+<p class="text-gray-300 text-[11px] font-medium tracking-wide">۱۴۰۲/۰۸/۱۱</p>
+</div>
+</div>
+</div>
+</div>
+<div class="snap-start flex flex-col w-40 shrink-0 group cursor-pointer relative">
+<div class="relative w-full aspect-[3/4] overflow-hidden rounded-xl shadow-lg border-2 border-transparent dark:border-white/5 group-hover:border-gold-500/40 transition-all duration-500 bg-card-dark">
+<div class="absolute inset-0 border border-white/5 rounded-xl z-20 pointer-events-none"></div>
+<div class="w-full h-full bg-center bg-no-repeat bg-cover transition-transform duration-700 group-hover:scale-105 filter grayscale-[20%] group-hover:grayscale-0" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAc_AnOtpWndCEKxQpIcJBcGtrmH87aIAyAr1S2usWQk_1T79fS5D-sDBQdm_ZwatvcC0YlHOvUL-5Sn17tvEM7bJHihm3MHhUCaN-CBDrUdysMJBYxuCK7fHU3jk39rC91SAnfoH5KqgfcsKlsQLmkf9Bw3U5J3jbM3FTgcjv_OL9Vq58iZM4Zinrir_BC4qUG6KjvnnYiTzXIhe_x8bVsmYBNLQcNgBHp-iMnAWlK34Au9M3yaF-nwIyMTUgkC3-Qq2L9rYPDcWM");'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent z-10 opacity-90"></div>
+<div class="absolute bottom-0 left-0 right-0 p-3 z-20 text-right">
+<p class="text-white text-base font-bold leading-tight drop-shadow-md">رضا کریمی</p>
+<div class="flex items-center gap-1 mt-1 opacity-80">
+<span class="material-symbols-outlined text-[14px] text-gold-400">event</span>
+<p class="text-gray-300 text-[11px] font-medium tracking-wide">۱۴۰۲/۰۸/۱۰</p>
+</div>
+</div>
+</div>
+</div>
+<div class="snap-start flex flex-col w-40 shrink-0 group cursor-pointer relative">
+<div class="relative w-full aspect-[3/4] overflow-hidden rounded-xl shadow-lg border-2 border-transparent dark:border-white/5 group-hover:border-gold-500/40 transition-all duration-500 bg-card-dark">
+<div class="absolute inset-0 border border-white/5 rounded-xl z-20 pointer-events-none"></div>
+<div class="w-full h-full bg-center bg-no-repeat bg-cover transition-transform duration-700 group-hover:scale-105 filter grayscale-[20%] group-hover:grayscale-0" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBpaCRL1vw2flqZqLof_RoDqLfZqYVUraWBc1Ae1BJ0WL6SbJtIVFaHySD_P3bb1RH7WqoHTcJQH0zNf06FL8zMIqwWSMPs6_9M8vws8N3UZl_u6xQvTZKIykVHdSSUvXFHDOPD_pUdVcl5Amp_2X7tdtPe-BtT89_r9HzMOKdTKDtZcY6sLkGw83HHuHL6j3BoKRhM96Z9EjP2aSlJVJpo3Rj1WpPd_T_EhdIy-6B43ZZZEHIjRmg64k0uzlWaOBfaww-ByGygW88");'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent z-10 opacity-90"></div>
+<div class="absolute bottom-0 left-0 right-0 p-3 z-20 text-right">
+<p class="text-white text-base font-bold leading-tight drop-shadow-md">حاج احمد جلالی</p>
+<div class="flex items-center gap-1 mt-1 opacity-80">
+<span class="material-symbols-outlined text-[14px] text-gold-400">event</span>
+<p class="text-gray-300 text-[11px] font-medium tracking-wide">۱۴۰۲/۰۸/۰۹</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-center px-10 opacity-30">
+<div class="h-px bg-gradient-to-r from-transparent via-gold-500 to-transparent w-full"></div>
+<div class="absolute">
+<span class="material-symbols-outlined text-gold-500 bg-background-light dark:bg-background-dark px-2 text-sm">filter_vintage</span>
+</div>
+</div>
+<div class="flex flex-col w-full pb-6 px-6">
+<div class="flex items-center justify-between pb-6">
+<h3 class="text-slate-900 dark:text-gold-400 text-xl font-bold leading-tight tracking-tight flex items-center gap-2">
+<span class="w-1.5 h-6 rounded-full bg-gold-500"></span>
+                     آگهی‌های ترحیم
+                </h3>
+</div>
+<div class="flex flex-col gap-6">
+<div class="group relative flex flex-col sm:flex-row gap-5 p-5 bg-white dark:bg-card-dark rounded-3xl shadow-md border border-gray-100 dark:border-white/5 hover:border-gold-500/30 dark:hover:border-gold-500/30 transition-all duration-300 overflow-hidden">
+<div class="absolute top-0 right-0 w-1.5 h-full bg-gold-500 rounded-r-3xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<div class="flex gap-4">
+<div class="relative w-24 h-24 shrink-0">
+<div class="absolute inset-0 border-2 border-gold-500/20 rounded-2xl rotate-3"></div>
+<div class="bg-center bg-no-repeat bg-cover rounded-2xl w-full h-full shadow-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAOZ58zv9X8ud4mUJ7oQ8MBf3eAjrNbahvV4g2JzNVsaw0AgHwzoJRWgkLubQc9xoxTkUjaTwqfuhkEBShUj1we5h18_IgVUicZpD5-lwKqbr38LBM-AE0ZVINIRtpCRUY4RdTxt2L2H1QBGiJRNvhFQkANA0H2S-hxrjXXPOAuFf2D9xwo6WI7Po7lHxG-_VI24cbL3rRMJRHl-UCvWn2IamyoM_ytkuaztHSwDpa_oMi2gUgn5DSYfyjWB3oHgi6VVnINTZ4y66Q");'></div>
+</div>
+<div class="flex flex-1 flex-col justify-between">
+<div class="flex justify-between items-start">
+<div>
+<p class="text-slate-900 dark:text-white text-lg font-bold leading-tight group-hover:text-gold-400 transition-colors">بانو مریم کاظمی</p>
+<span class="inline-block mt-2 px-2.5 py-0.5 rounded-md text-[10px] font-bold bg-gold-500/10 text-gold-500 border border-gold-500/20">
+                                         مراسم ترحیم
+                                     </span>
+</div>
+</div>
+<div class="mt-4 flex flex-wrap gap-y-2 gap-x-4">
+<div class="flex items-center gap-1.5 text-gray-400 dark:text-gray-400 text-xs bg-white/5 px-2 py-1 rounded">
+<span class="material-symbols-outlined text-[16px] text-gold-500">calendar_today</span>
+<span>جمعه، ۱۴۰۲/۰۸/۱۲</span>
+</div>
+<div class="flex items-center gap-1.5 text-gray-400 dark:text-gray-400 text-xs bg-white/5 px-2 py-1 rounded">
+<span class="material-symbols-outlined text-[16px] text-gold-500">schedule</span>
+<span>۱۴:۰۰ الی ۱۶:۰۰</span>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-1 pt-3 border-t border-dashed border-gray-200 dark:border-white/5">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[16px] text-gray-500 mt-0.5">location_on</span>
+<p class="text-gray-500 dark:text-gray-400 text-xs leading-relaxed">
+                                مسجد جامع شهر، خیابان امام خمینی، روبروی بانک ملی
+                             </p>
+</div>
+</div>
+</div>
+<div class="group relative flex flex-col sm:flex-row gap-5 p-5 bg-white dark:bg-card-dark rounded-3xl shadow-md border border-gray-100 dark:border-white/5 hover:border-silver-500/30 dark:hover:border-silver-500/30 transition-all duration-300 overflow-hidden">
+<div class="absolute top-0 right-0 w-1.5 h-full bg-silver-500 rounded-r-3xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<div class="flex gap-4">
+<div class="relative w-24 h-24 shrink-0">
+<div class="absolute inset-0 border-2 border-silver-500/20 rounded-2xl rotate-3"></div>
+<div class="bg-center bg-no-repeat bg-cover rounded-2xl w-full h-full shadow-lg grayscale-[20%]" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDyXuOjGU64eEzr2LcTld9Ojqzs79UcsM5Gaqi4mzbypSNulft0eduPnjFMp8jIRaIxYsMMs9shWo_UeGJ1QKOWuHFShiMlsncY97bEj9ql5e-G2-ELbQWdDNwK3F-LJH-eRBrAqm5Oa5gZsFPLKaKUk5Tvb6nOg0gzj2nh3LA31Pw9GNNfrtWL3JQjM0oFy_okRGIhzi9Am302v-LsEbS1oYvC-RbSUBBQFcjUZbmSZqVkxkJFncRf62rl0mTm8pEYXDrA203QqlQ");'></div>
+</div>
+<div class="flex flex-1 flex-col justify-between">
+<div class="flex justify-between items-start">
+<div>
+<p class="text-slate-900 dark:text-white text-lg font-bold leading-tight group-hover:text-silver-400 transition-colors">کربلایی حسین احمدی</p>
+<span class="inline-block mt-2 px-2.5 py-0.5 rounded-md text-[10px] font-bold bg-silver-500/10 text-silver-400 border border-silver-500/20">
+                                         چهلمین روز
+                                     </span>
+</div>
+</div>
+<div class="mt-4 flex flex-wrap gap-y-2 gap-x-4">
+<div class="flex items-center gap-1.5 text-gray-400 dark:text-gray-400 text-xs bg-white/5 px-2 py-1 rounded">
+<span class="material-symbols-outlined text-[16px] text-silver-500">calendar_today</span>
+<span>چهارشنبه، ۱۴۰۲/۰۸/۱۰</span>
+</div>
+<div class="flex items-center gap-1.5 text-gray-400 dark:text-gray-400 text-xs bg-white/5 px-2 py-1 rounded">
+<span class="material-symbols-outlined text-[16px] text-silver-500">schedule</span>
+<span>۱۵:۰۰ الی ۱۷:۰۰</span>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-1 pt-3 border-t border-dashed border-gray-200 dark:border-white/5">
+<div class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[16px] text-gray-500 mt-0.5">location_on</span>
+<p class="text-gray-500 dark:text-gray-400 text-xs leading-relaxed">
+                                گلزار شهدا، قطعه ایثارگران، ردیف ۱۲
+                             </p>
+</div>
+</div>
+</div>
+<div class="group relative flex flex-col sm:flex-row gap-5 p-5 bg-white dark:bg-card-dark rounded-3xl shadow-md border border-gray-100 dark:border-white/5 hover:border-amber-600/30 dark:hover:border-amber-600/30 transition-all duration-300 overflow-hidden">
+<div class="absolute top-0 right-0 w-1.5 h-full bg-amber-600 rounded-r-3xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<div class="flex gap-4">
+<div class="relative w-24 h-24 shrink-0">
+<div class="absolute inset-0 border-2 border-amber-600/20 rounded-2xl rotate-3"></div>
+<div class="bg-center bg-no-repeat bg-cover rounded-2xl w-full h-full shadow-lg sepia-[30%]" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCCjjOSSOoc_LdKVnLT94GX0rV_LDXZickI-thF4egUMd_4kiSzFfx_KA8RRZemBVSHlmiNEs7YXBptCsCPBR7YPqKW_9wiy0OXJJw-q_o6-nCzi3mF535FYq7N9r3WoneGhvGb76-9RKEEQ5XYIgXhC6wBfUjU1E98xj9aImuJ7lgXezfYfNwlUI6wWBkWkgHLx_1BlgqsULqiRCqlCTpEPszjbcSgDaasPgnFUUn4QJF0DV5IkgU3qNN1fMSvrYWJ4HGIoguSN-s");'></div>
+</div>
+<div class="flex flex-1 flex-col justify-between">
+<div class="flex justify-between items-start">
+<div>
+<p class="text-slate-900 dark:text-white text-lg font-bold leading-tight group-hover:text-amber-500 transition-colors">استاد محمد رضا شجری</p>
+<span class="inline-block mt-2 px-2.5 py-0.5 rounded-md text-[10px] font-bold bg-amber-600/10 text-amber-500 border border-amber-600/20">
+                                         اولین سالگرد
+                                     </span>
+</div>
+</div>
+<div class="mt-4 flex flex-wrap gap-y-2 gap-x-4">
+<div class="flex items-center gap-1.5 text-gray-400 dark:text-gray-400 text-xs bg-white/5 px-2 py-1 rounded">
+<span class="material-symbols-outlined text-[16px] text-amber-600">calendar_today</span>
+<span>دوشنبه، ۱۴۰۲/۰۸/۰۸</span>
+</div>
+<div class="flex items-center gap-1.5 text-gray-400 dark:text-gray-400 text-xs bg-white/5 px-2 py-1 rounded">
+<span class="material-symbols-outlined text-[16px] text-amber-600">location_on</span>
+<span>قطعه هنرمندان</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fixed bottom-0 w-full bg-white/90 dark:bg-[#0c1017]/90 backdrop-blur-xl border-t border-gray-200 dark:border-white/5 pb-safe pt-2 px-6 z-40 shadow-[0_-5px_20px_rgba(0,0,0,0.1)]">
+<div class="flex justify-between items-center h-16 max-w-md mx-auto">
+<button class="flex flex-col items-center justify-center gap-1.5 text-gold-500 relative">
+<span class="absolute -top-3 w-8 h-1 bg-gold-500 rounded-b-full shadow-[0_0_10px_rgba(212,175,55,0.5)]"></span>
+<span class="material-symbols-outlined text-[26px] fill-1 drop-shadow-sm">home</span>
+<span class="text-[10px] font-bold">خانه</span>
+</button>
+<button class="flex flex-col items-center justify-center gap-1.5 text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
+<span class="material-symbols-outlined text-[26px]">map</span>
+<span class="text-[10px] font-medium">نقشه</span>
+</button>
+<button class="flex flex-col items-center justify-center gap-1.5 text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
+<span class="material-symbols-outlined text-[26px]">bookmark</span>
+<span class="text-[10px] font-medium">ذخیره‌ها</span>
+</button>
+<button class="flex flex-col items-center justify-center gap-1.5 text-gray-400 dark:text-gray-500 hover:text-gray-600 dark:hover:text-gray-300 transition-colors">
+<span class="material-symbols-outlined text-[26px]">person</span>
+<span class="text-[10px] font-medium">پروفایل</span>
+</button>
+</div>
+</div>
+
+</body></html>

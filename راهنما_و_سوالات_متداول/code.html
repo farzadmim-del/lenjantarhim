@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+
+<html class="dark" dir="rtl" lang="fa"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>راهنما و سوالات متداول</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700&amp;family=Vazirmatn:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1152d4",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                        "surface-dark": "#1c222e",
+                        "surface-light": "#ffffff",
+                    },
+                    fontFamily: {
+                        "display": ["Vazirmatn", "Public Sans", "Noto Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem", 
+                        "lg": "0.75rem", 
+                        "xl": "1rem", 
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        /* Custom scrollbar hiding for clean UI */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        
+        /* Smooth detail opening */
+        details > summary {
+            list-style: none;
+        }
+        details > summary::-webkit-details-marker {
+            display: none;
+        }
+        details[open] summary ~ * {
+            animation: sweep .3s ease-in-out;
+        }
+        @keyframes sweep {
+            0%    {opacity: 0; transform: translateY(-10px)}
+            100%  {opacity: 1; transform: translateY(0)}
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white font-display min-h-screen flex flex-col antialiased selection:bg-primary selection:text-white">
+<!-- Top App Bar -->
+<div class="sticky top-0 z-10 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
+<div class="flex items-center justify-between px-4 py-3">
+<button class="flex items-center justify-center p-2 rounded-full hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors text-slate-900 dark:text-white">
+<span class="material-symbols-outlined text-2xl">arrow_forward</span>
+</button>
+<h1 class="text-lg font-bold tracking-tight text-center flex-1 ml-10">راهنما و سوالات متداول</h1>
+</div>
+</div>
+<!-- Search Bar -->
+<div class="px-4 pt-4 pb-2">
+<div class="relative group">
+<div class="absolute inset-y-0 right-0 flex items-center pr-4 pointer-events-none">
+<span class="material-symbols-outlined text-slate-400 group-focus-within:text-primary transition-colors">search</span>
+</div>
+<input aria-label="Search" class="block w-full py-3.5 pr-12 pl-4 text-sm text-slate-900 dark:text-white bg-surface-light dark:bg-surface-dark border-none rounded-xl shadow-sm focus:ring-2 focus:ring-primary placeholder:text-slate-400 dark:placeholder:text-slate-500 transition-all" placeholder="جستجو در سوالات..." type="text"/>
+</div>
+</div>
+<!-- Filter Chips -->
+<div class="w-full overflow-x-auto no-scrollbar pb-2 pt-2">
+<div class="flex px-4 gap-2 min-w-max">
+<!-- Active Chip -->
+<button class="flex items-center px-5 py-2.5 rounded-full bg-primary text-white text-sm font-medium shadow-md shadow-primary/20 transition-transform active:scale-95">
+                همه
+            </button>
+<!-- Inactive Chips -->
+<button class="flex items-center px-5 py-2.5 rounded-full bg-surface-light dark:bg-surface-dark border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 text-sm font-medium whitespace-nowrap hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">
+                عمومی
+            </button>
+<button class="flex items-center px-5 py-2.5 rounded-full bg-surface-light dark:bg-surface-dark border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 text-sm font-medium whitespace-nowrap hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">
+                آگهی‌های ترحیم
+            </button>
+<button class="flex items-center px-5 py-2.5 rounded-full bg-surface-light dark:bg-surface-dark border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 text-sm font-medium whitespace-nowrap hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">
+                تبلیغات
+            </button>
+<button class="flex items-center px-5 py-2.5 rounded-full bg-surface-light dark:bg-surface-dark border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 text-sm font-medium whitespace-nowrap hover:bg-slate-50 dark:hover:bg-slate-800 transition-colors">
+                پروفایل کاربری
+            </button>
+</div>
+</div>
+<!-- FAQ List -->
+<div class="flex-1 px-4 py-4 flex flex-col gap-3">
+<!-- Accordion Item 1 -->
+<details class="group bg-surface-light dark:bg-surface-dark rounded-xl shadow-sm border border-slate-100 dark:border-transparent overflow-hidden transition-all duration-300" open="">
+<summary class="flex items-center justify-between p-4 cursor-pointer select-none bg-inherit">
+<span class="font-medium text-slate-800 dark:text-slate-100 text-base leading-relaxed">چگونه می‌توانم یک آگهی ترحیم ثبت کنم؟</span>
+<span class="material-symbols-outlined text-primary transition-transform duration-300 group-open:-rotate-180">expand_more</span>
+</summary>
+<div class="px-4 pb-4 pt-0">
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-7">
+                    برای ثبت آگهی، کافیست از نوار پایین صفحه وارد بخش 
+                    <span class="text-primary font-bold">«ثبت آگهی»</span>
+                    شوید. سپس اطلاعات متوفی را وارد کرده، تصویر مورد نظر را بارگذاری کنید و پس از انتخاب طرح اعلامیه، هزینه را پرداخت نمایید. آگهی شما پس از تایید مدیریت منتشر خواهد شد.
+                </p>
+</div>
+</details>
+<!-- Accordion Item 2 -->
+<details class="group bg-surface-light dark:bg-surface-dark rounded-xl shadow-sm border border-slate-100 dark:border-transparent overflow-hidden transition-all duration-300">
+<summary class="flex items-center justify-between p-4 cursor-pointer select-none bg-inherit">
+<span class="font-medium text-slate-800 dark:text-slate-100 text-base leading-relaxed">هزینه ثبت تبلیغات چقدر است؟</span>
+<span class="material-symbols-outlined text-slate-400 dark:text-slate-500 transition-transform duration-300 group-open:-rotate-180 group-open:text-primary">expand_more</span>
+</summary>
+<div class="px-4 pb-4 pt-0">
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-7">
+                    هزینه تبلیغات بستگی به مدت زمان نمایش و محل قرارگیری بنر تبلیغاتی شما دارد. می‌توانید تعرفه‌های دقیق را در بخش «تعرفه‌ها» در منوی پروفایل مشاهده کنید.
+                </p>
+</div>
+</details>
+<!-- Accordion Item 3 -->
+<details class="group bg-surface-light dark:bg-surface-dark rounded-xl shadow-sm border border-slate-100 dark:border-transparent overflow-hidden transition-all duration-300">
+<summary class="flex items-center justify-between p-4 cursor-pointer select-none bg-inherit">
+<span class="font-medium text-slate-800 dark:text-slate-100 text-base leading-relaxed">چطور می‌توانم آگهی خود را ویرایش کنم؟</span>
+<span class="material-symbols-outlined text-slate-400 dark:text-slate-500 transition-transform duration-300 group-open:-rotate-180 group-open:text-primary">expand_more</span>
+</summary>
+<div class="px-4 pb-4 pt-0">
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-7">
+                    به بخش «آگهی‌های من» در پروفایل کاربری خود بروید. روی آگهی مورد نظر کلیک کرده و گزینه ویرایش را انتخاب کنید. توجه داشته باشید که ویرایش پس از انتشار ممکن است نیاز به تایید مجدد داشته باشد.
+                </p>
+</div>
+</details>
+<!-- Accordion Item 4 -->
+<details class="group bg-surface-light dark:bg-surface-dark rounded-xl shadow-sm border border-slate-100 dark:border-transparent overflow-hidden transition-all duration-300">
+<summary class="flex items-center justify-between p-4 cursor-pointer select-none bg-inherit">
+<span class="font-medium text-slate-800 dark:text-slate-100 text-base leading-relaxed">آیا استفاده از اپلیکیشن رایگان است؟</span>
+<span class="material-symbols-outlined text-slate-400 dark:text-slate-500 transition-transform duration-300 group-open:-rotate-180 group-open:text-primary">expand_more</span>
+</summary>
+<div class="px-4 pb-4 pt-0">
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-7">
+                    مشاهده آگهی‌های ترحیم، جستجو در متوفیان و استفاده از امکانات پایه اپلیکیشن کاملاً رایگان است. تنها برای ثبت آگهی‌های ویژه و تبلیغات تجاری هزینه دریافت می‌شود.
+                </p>
+</div>
+</details>
+<!-- Accordion Item 5 -->
+<details class="group bg-surface-light dark:bg-surface-dark rounded-xl shadow-sm border border-slate-100 dark:border-transparent overflow-hidden transition-all duration-300">
+<summary class="flex items-center justify-between p-4 cursor-pointer select-none bg-inherit">
+<span class="font-medium text-slate-800 dark:text-slate-100 text-base leading-relaxed">ساعات کاری پشتیبانی چگونه است؟</span>
+<span class="material-symbols-outlined text-slate-400 dark:text-slate-500 transition-transform duration-300 group-open:-rotate-180 group-open:text-primary">expand_more</span>
+</summary>
+<div class="px-4 pb-4 pt-0">
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-7">
+                    تیم پشتیبانی ما همه روزه حتی در ایام تعطیل از ساعت ۸ صبح الی ۱۰ شب پاسخگوی شما عزیزان می‌باشد.
+                </p>
+</div>
+</details>
+</div>
+<!-- Bottom Help Section -->
+<div class="mt-auto px-4 py-8 bg-surface-light dark:bg-surface-dark border-t border-slate-200 dark:border-slate-800">
+<div class="flex flex-col items-center justify-center text-center">
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-3">
+<span class="material-symbols-outlined text-primary">support_agent</span>
+</div>
+<h3 class="text-base font-bold text-slate-900 dark:text-white mb-1">پاسخ خود را پیدا نکردید؟</h3>
+<p class="text-sm text-slate-500 dark:text-slate-400 mb-6 max-w-xs">
+                تیم پشتیبانی ما آماده پاسخگویی به سوالات شماست.
+            </p>
+<button class="w-full bg-primary hover:bg-blue-700 text-white font-bold py-3.5 px-6 rounded-xl shadow-lg shadow-primary/25 transition-all active:scale-[0.98] flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+                تماس با پشتیبانی
+            </button>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<html class="dark" dir="rtl" lang="fa"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>آلبوم متوفیات</title>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Noto+Sans+Arabic:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1152d4",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                    },
+                    fontFamily: {
+                        "display": ["Newsreader", "Noto Sans Arabic", "serif"],
+                        "sans": ["Noto Sans Arabic", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        /* Custom scrollbar for webkit */
+        ::-webkit-scrollbar {
+            width: 4px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #374151;
+            border-radius: 4px;
+        }
+        /* Ensure inputs don't have default styling issues in RTL */
+        input::placeholder {
+            text-align: right; 
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white font-display antialiased selection:bg-primary selection:text-white">
+<div class="relative flex h-full min-h-screen w-full flex-col overflow-x-hidden pb-20">
+<!-- Top App Bar -->
+<div class="sticky top-0 z-20 flex items-center justify-between bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-md p-4 pb-2 border-b border-gray-200 dark:border-gray-800">
+<div class="flex size-10 shrink-0 items-center justify-center rounded-full active:bg-gray-200 dark:active:bg-gray-800 cursor-pointer">
+<span class="material-symbols-outlined text-slate-900 dark:text-white text-[24px]">arrow_forward</span>
+</div>
+<h2 class="text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">آلبوم متوفیات</h2>
+<div class="flex w-10 items-center justify-end cursor-pointer">
+<span class="material-symbols-outlined text-[#9da6b9] text-[24px]">filter_list</span>
+</div>
+</div>
+<!-- Search Bar -->
+<div class="px-4 py-3 sticky top-[60px] z-10 bg-background-light dark:bg-background-dark">
+<label class="flex flex-col h-12 w-full shadow-sm">
+<div class="flex w-full flex-1 items-stretch rounded-xl h-full bg-white dark:bg-[#1c2333] ring-1 ring-gray-200 dark:ring-gray-800 focus-within:ring-2 focus-within:ring-primary transition-all">
+<div class="text-[#9da6b9] flex items-center justify-center pr-4 pl-2">
+<span class="material-symbols-outlined text-[24px]">search</span>
+</div>
+<input class="flex w-full min-w-0 flex-1 resize-none overflow-hidden bg-transparent text-slate-900 dark:text-white focus:outline-0 border-none h-full placeholder:text-[#9da6b9] px-2 text-base font-normal leading-normal font-sans" placeholder="جستجوی نام متوفی..." value=""/>
+</div>
+</label>
+</div>
+<!-- Segmented Control (View Toggle) -->
+<div class="px-4 pb-4">
+<div class="flex h-10 w-full items-center justify-center rounded-lg bg-gray-200 dark:bg-[#1c2333] p-1">
+<label class="flex cursor-pointer h-full grow items-center justify-center overflow-hidden rounded-md px-2 transition-all duration-200 hover:bg-black/5 dark:hover:bg-white/5 text-[#6b7280] dark:text-[#9da6b9]">
+<span class="truncate text-sm font-medium leading-normal font-sans">لیست</span>
+<input class="invisible w-0 fixed" name="view-toggle" type="radio" value="list"/>
+</label>
+<label class="flex cursor-pointer h-full grow items-center justify-center overflow-hidden rounded-md px-2 bg-white dark:bg-primary shadow-sm text-slate-900 dark:text-white">
+<span class="truncate text-sm font-medium leading-normal font-sans">۲ ستونه</span>
+<input checked="" class="invisible w-0 fixed" name="view-toggle" type="radio" value="2col"/>
+</label>
+<label class="flex cursor-pointer h-full grow items-center justify-center overflow-hidden rounded-md px-2 transition-all duration-200 hover:bg-black/5 dark:hover:bg-white/5 text-[#6b7280] dark:text-[#9da6b9]">
+<span class="truncate text-sm font-medium leading-normal font-sans">۴ ستونه</span>
+<input class="invisible w-0 fixed" name="view-toggle" type="radio" value="4col"/>
+</label>
+</div>
+</div>
+<!-- Grid Content -->
+<div class="flex-1 px-4">
+<!-- Simulated 2-column grid state -->
+<div class="grid grid-cols-2 gap-4 pb-4">
+<!-- Card 1 -->
+<div class="group flex flex-col gap-3 rounded-xl bg-white dark:bg-[#1c2333] p-3 shadow-sm border border-gray-100 dark:border-gray-800 hover:border-primary/50 transition-colors">
+<div class="w-full relative aspect-[3/4] overflow-hidden rounded-lg bg-gray-100 dark:bg-gray-800">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Portrait of a young woman with a gentle expression looking slightly to the side" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCzQ9wsHF1pzBJ_r9Zhgt9mmM0ONkh9UNCeq3r8_Rsu4EA5CA1fLKP2zcZinTYU6jpzv3npI-5i1b__Nmp_k48XXDWpfYdvBAo0xZc2hi31goedLp9cGM-NMOV9TToWv6-5mcSHEu0V-uggC5vsO6ee5FmltTKUrP5VXHKqDmMgeLqxQ6X66B8OhX-AX69x2KrE6g773psz-0tuoGelEt1AdSdCpcu-HyWSFfspUboue6JXXhPwGruVsJ4SDbFXohgMWE4rOrdhMaU");'></div>
+</div>
+<div>
+<p class="text-slate-900 dark:text-white text-base font-bold leading-normal mb-1">شادروان مریم نوری</p>
+<p class="text-[#6b7280] dark:text-[#9da6b9] text-xs font-normal leading-normal font-sans">۱۳۵۰ - ۱۴۰۲</p>
+<p class="text-primary text-xs font-medium mt-1 font-sans">قطعه ۳۰۲</p>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group flex flex-col gap-3 rounded-xl bg-white dark:bg-[#1c2333] p-3 shadow-sm border border-gray-100 dark:border-gray-800 hover:border-primary/50 transition-colors">
+<div class="w-full relative aspect-[3/4] overflow-hidden rounded-lg bg-gray-100 dark:bg-gray-800">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Portrait of an elderly man with a beard looking calm and wise" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDgsLWgHnU9saC-0ZZTk4LosRLqOFw_vSuhwBcBoZ9yqMQP7X6cDztFOi5QyD0s2owFC20D96j4c6K_C7CQGQ1YkhJZdGbFcueNpcE4DonwEvlb9kG2xifHcceCEzkd-SKYcjDkoLEqfpMOi8N4Fw8JB1sz2HeT3R007mVS5uy3HV1VIFSxDbT2P0IAQ_Tw05WwmxJvd3M-S7tlYapTcLVxkduLLV9TWS5eMq5xL3KxbSoCUE0MR8jLzGNFO93suJ3TQg3SyCVpgPs");'></div>
+</div>
+<div>
+<p class="text-slate-900 dark:text-white text-base font-bold leading-normal mb-1">مرحوم علی محمدی</p>
+<p class="text-[#6b7280] dark:text-[#9da6b9] text-xs font-normal leading-normal font-sans">۱۳۳۰ - ۱۳۹۹</p>
+<p class="text-primary text-xs font-medium mt-1 font-sans">قطعه ۱۰۴</p>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group flex flex-col gap-3 rounded-xl bg-white dark:bg-[#1c2333] p-3 shadow-sm border border-gray-100 dark:border-gray-800 hover:border-primary/50 transition-colors">
+<div class="w-full relative aspect-[3/4] overflow-hidden rounded-lg bg-gray-100 dark:bg-gray-800">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Portrait of a middle-aged man with glasses looking directly at the camera" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAx1bfdAmYYtL0P0K1eTznoopMTkWEI0UNWsjbC29PLs7WpCkQfLrorHrRcmLzZS0HDn13sGX3cp0L3i2HQ5lvycaViq3cM1LnXUGAZpH1DfklrMAIyZeMUx5Tx6s_sI8guQKmtsS4ln5mbksUbljnlOivmZWlUaTF9XqoDpC0ijVwccB_JboZ8rmIB8cRoaIx7v-0qGDysB7dlRfpbBq2YsGZmD7NhtaMhmMarX2TprO38-e2gWUn3900Mvpub2QW6DSK8nz0PV3c");'></div>
+</div>
+<div>
+<p class="text-slate-900 dark:text-white text-base font-bold leading-normal mb-1">مرحوم رضا کاظمی</p>
+<p class="text-[#6b7280] dark:text-[#9da6b9] text-xs font-normal leading-normal font-sans">۱۳۲۵ - ۱۴۰۰</p>
+<p class="text-primary text-xs font-medium mt-1 font-sans">قطعه ۱۲</p>
+</div>
+</div>
+<!-- Card 4 (Placeholder Image style) -->
+<div class="group flex flex-col gap-3 rounded-xl bg-white dark:bg-[#1c2333] p-3 shadow-sm border border-gray-100 dark:border-gray-800 hover:border-primary/50 transition-colors">
+<div class="w-full relative aspect-[3/4] overflow-hidden rounded-lg bg-gray-100 dark:bg-gray-800 flex items-center justify-center">
+<div class="text-gray-300 dark:text-gray-600 flex flex-col items-center">
+<span class="material-symbols-outlined text-[48px]">person</span>
+</div>
+</div>
+<div>
+<p class="text-slate-900 dark:text-white text-base font-bold leading-normal mb-1">شادروان زهرا حسینی</p>
+<p class="text-[#6b7280] dark:text-[#9da6b9] text-xs font-normal leading-normal font-sans">۱۳۴۵ - ۱۴۰۱</p>
+<p class="text-primary text-xs font-medium mt-1 font-sans">قطعه ۲۰</p>
+</div>
+</div>
+<!-- Card 5 -->
+<div class="group flex flex-col gap-3 rounded-xl bg-white dark:bg-[#1c2333] p-3 shadow-sm border border-gray-100 dark:border-gray-800 hover:border-primary/50 transition-colors">
+<div class="w-full relative aspect-[3/4] overflow-hidden rounded-lg bg-gray-100 dark:bg-gray-800">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Portrait of a young man smiling warmly in a white shirt" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBhbnsdt5XRr8RzVe8pb0kBACl7QKQ_jrwzvLcMmW9icRh77zvopl7OAI-4El4qXvVvmx0hS-OZMc4beNcFnRrMD6ikXjrjYKLxkyGFy5G7JuI6JtIEYbFpd_kRriMaC9uzRmcCGU4evLvboxDKBZOvMhz1IVgGUU_4-WMSsDQYHTeCNokv9ccKV9hIsOIsOaoMrGAP_VeFuSwcu6vAHgLT2qg1HJ4Wqt4-ecmkJKadW-vLDc2Uz6DpijJZKQKKaFqpYfq0h_ZNtFg");'></div>
+</div>
+<div>
+<p class="text-slate-900 dark:text-white text-base font-bold leading-normal mb-1">مرحوم حسن عباسی</p>
+<p class="text-[#6b7280] dark:text-[#9da6b9] text-xs font-normal leading-normal font-sans">۱۳۳۵ - ۱۳۹۸</p>
+<p class="text-primary text-xs font-medium mt-1 font-sans">قطعه ۸۸</p>
+</div>
+</div>
+<!-- Card 6 -->
+<div class="group flex flex-col gap-3 rounded-xl bg-white dark:bg-[#1c2333] p-3 shadow-sm border border-gray-100 dark:border-gray-800 hover:border-primary/50 transition-colors">
+<div class="w-full relative aspect-[3/4] overflow-hidden rounded-lg bg-gray-100 dark:bg-gray-800">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Portrait of a smiling woman looking directly at the camera outdoors" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBHBBUNWo31UWKQrnkpidzWczp7UyMQgq07t08IQok1zAEzwkW_I4zYNud1O5pooYgcpRruz6ivKDEOv__q9lOdLRowzVFBOZKhJjrDzRlLokQW0WkHs5-9Qt2wHCR6t5YA4F8lmwTOR7d43Ns-5_YoVZrGzqkFvYkwJaN0SR0btOMfeaoPKmClydZ5DMvpTe4fWQS9Ae-L2-K-iF3Curr2i2BYZKkz-iKsHGkUhmjThkv-Ink5q1PSoyxKDsRQF2vxq9f5Mc2h2RI");'></div>
+</div>
+<div>
+<p class="text-slate-900 dark:text-white text-base font-bold leading-normal mb-1">شادروان فاطمه کریمی</p>
+<p class="text-[#6b7280] dark:text-[#9da6b9] text-xs font-normal leading-normal font-sans">۱۳۶۰ - ۱۴۰۳</p>
+<p class="text-primary text-xs font-medium mt-1 font-sans">قطعه ۵۵</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Navigation Bar -->
+<div class="fixed bottom-0 left-0 right-0 z-50 border-t border-gray-200 dark:border-gray-800 bg-white/95 dark:bg-[#101622]/95 backdrop-blur-lg pb-5 pt-2 px-6">
+<div class="flex items-end justify-between gap-2">
+<a class="group flex flex-1 flex-col items-center justify-end gap-1 text-[#9da6b9] hover:text-primary transition-colors" href="#">
+<div class="flex h-6 items-center justify-center group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[24px]">home</span>
+</div>
+<p class="text-xs font-medium leading-normal tracking-[0.015em] font-sans">خانه</p>
+</a>
+<a class="group flex flex-1 flex-col items-center justify-end gap-1 text-primary" href="#">
+<div class="flex h-6 items-center justify-center">
+<span class="material-symbols-outlined text-[24px] font-variation-settings-fill">menu_book</span>
+</div>
+<p class="text-xs font-bold leading-normal tracking-[0.015em] font-sans">آلبوم</p>
+</a>
+<a class="group flex flex-1 flex-col items-center justify-end gap-1 text-[#9da6b9] hover:text-primary transition-colors" href="#">
+<div class="flex h-6 items-center justify-center group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[24px]">map</span>
+</div>
+<p class="text-xs font-medium leading-normal tracking-[0.015em] font-sans">نقشه</p>
+</a>
+<a class="group flex flex-1 flex-col items-center justify-end gap-1 text-[#9da6b9] hover:text-primary transition-colors" href="#">
+<div class="flex h-6 items-center justify-center group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[24px]">person</span>
+</div>
+<p class="text-xs font-medium leading-normal tracking-[0.015em] font-sans">پروفایل</p>
+</a>
+</div>
+</div>
+</div>
+<style>
+        .font-variation-settings-fill {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</body></html>

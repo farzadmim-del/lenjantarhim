@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+<html class="dark" dir="rtl" lang="fa"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>لیست مداحان</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1152d4",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                        "surface-dark": "#1e2430", // Slightly lighter than background-dark for cards
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "Vazirmatn", "sans-serif"],
+                        "body": ["Vazirmatn", "Public Sans", "sans-serif"],
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        /* Custom scrollbar hiding for chips */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        body {
+            font-family: 'Vazirmatn', 'Public Sans', sans-serif;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white transition-colors duration-200">
+<div class="relative flex h-full min-h-screen w-full flex-col max-w-md mx-auto bg-background-light dark:bg-background-dark overflow-x-hidden shadow-2xl">
+<!-- Header -->
+<div class="flex items-center sticky top-0 z-50 bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-md p-4 pb-2 border-b border-gray-200 dark:border-gray-800 justify-between">
+<div class="text-slate-900 dark:text-white flex size-10 shrink-0 items-center justify-center rounded-full hover:bg-gray-200 dark:hover:bg-white/10 transition-colors cursor-pointer">
+<span class="material-symbols-outlined">arrow_forward</span>
+</div>
+<h2 class="text-slate-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">لیست مداحان</h2>
+<div class="size-10 shrink-0"></div> <!-- Spacer for center alignment -->
+</div>
+<!-- Search Bar -->
+<div class="px-4 py-3 sticky top-[60px] z-40 bg-background-light dark:bg-background-dark">
+<label class="flex flex-col h-12 w-full">
+<div class="flex w-full flex-1 items-stretch rounded-xl h-full shadow-sm">
+<div class="text-slate-500 dark:text-[#9da6b9] flex border-none bg-white dark:bg-surface-dark items-center justify-center pr-4 rounded-r-xl border-l-0">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-slate-900 dark:text-white focus:outline-0 focus:ring-0 border-none bg-white dark:bg-surface-dark focus:border-none h-full placeholder:text-slate-400 dark:placeholder:text-[#9da6b9] px-4 rounded-r-none border-r-0 pl-2 text-base font-normal leading-normal" placeholder="جستجوی نام مداح..." value=""/>
+</div>
+</label>
+</div>
+<!-- Filter Chips -->
+<div class="flex gap-3 p-3 pl-4 overflow-x-auto no-scrollbar">
+<!-- Active Chip -->
+<div class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-primary pl-5 pr-5 shadow-lg shadow-primary/20 cursor-pointer">
+<p class="text-white text-sm font-medium leading-normal">همه</p>
+</div>
+<!-- Inactive Chips -->
+<div class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-white dark:bg-surface-dark border border-gray-200 dark:border-transparent pl-5 pr-5 cursor-pointer hover:bg-gray-100 dark:hover:bg-white/5 transition-colors">
+<p class="text-slate-700 dark:text-gray-300 text-sm font-medium leading-normal">مداحی</p>
+</div>
+<div class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-white dark:bg-surface-dark border border-gray-200 dark:border-transparent pl-5 pr-5 cursor-pointer hover:bg-gray-100 dark:hover:bg-white/5 transition-colors">
+<p class="text-slate-700 dark:text-gray-300 text-sm font-medium leading-normal">قرآن خوانی</p>
+</div>
+<div class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-white dark:bg-surface-dark border border-gray-200 dark:border-transparent pl-5 pr-5 cursor-pointer hover:bg-gray-100 dark:hover:bg-white/5 transition-colors">
+<p class="text-slate-700 dark:text-gray-300 text-sm font-medium leading-normal">دعا خوانی</p>
+</div>
+<div class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-white dark:bg-surface-dark border border-gray-200 dark:border-transparent pl-5 pr-5 cursor-pointer hover:bg-gray-100 dark:hover:bg-white/5 transition-colors">
+<p class="text-slate-700 dark:text-gray-300 text-sm font-medium leading-normal">سخنرانی</p>
+</div>
+</div>
+<!-- Section Title (Optional/Subtle) -->
+<div class="px-4 py-2">
+<p class="text-xs font-bold text-slate-400 dark:text-slate-500 uppercase tracking-wider">برگزیدگان</p>
+</div>
+<!-- List Items -->
+<div class="flex flex-col gap-1 pb-20">
+<!-- Item 1: Promoted/Featured -->
+<div class="group flex items-center gap-4 bg-background-light dark:bg-background-dark hover:bg-gray-50 dark:hover:bg-surface-dark px-4 min-h-[88px] py-3 justify-between border-b border-gray-100 dark:border-gray-800 transition-colors cursor-pointer relative overflow-hidden">
+<!-- Subtle highlight for promoted -->
+<div class="absolute right-0 top-0 bottom-0 w-1 bg-primary rounded-l-md"></div>
+<div class="flex items-center gap-4">
+<div class="relative">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-14 w-14 shadow-md" data-alt="Portrait of a religious man in black suit" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAxSAB96HwbfHeXHnX8Ky_crzzAjPsEQKPWMbuCGpegIBlFwKC7Xe3Vzz8SHXuQK0sksn4off6ZvRtws-pcJcx9Gg_mVPlHVOPFGgFqbxbf7JZJhmLWL3GpWhGA1qg8WoTdKoO39nys0aU-gKt4R_aLtMFtv9L1Gy2oHetcLnmPQeQRSlE6WTTspevUyxS5GhIi6KvZBlhwtWx1UpikQ5IStBWYLT08hoeBt-jrRl1YcqZIbs8AVHrCnnhJk9eQNJzm-gFha8WaZZM");'></div>
+<div class="absolute -bottom-1 -right-1 bg-primary text-white text-[10px] px-1.5 py-0.5 rounded-full border-2 border-background-light dark:border-background-dark">ویژه</div>
+</div>
+<div class="flex flex-col justify-center gap-1">
+<div class="flex items-center gap-2">
+<p class="text-slate-900 dark:text-white text-base font-bold leading-normal line-clamp-1">حاج علی رضایی</p>
+<span class="material-symbols-outlined text-blue-500 text-[16px]">verified</span>
+</div>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal line-clamp-1">تخصص: روضه‌خوانی، مداحی اهل بیت</p>
+<div class="flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-yellow-500 text-[14px]">star</span>
+<span class="text-xs text-slate-500 dark:text-slate-400">۴.۸ (۱۲۰ نظر)</span>
+</div>
+</div>
+</div>
+<div class="shrink-0 flex gap-2">
+<button class="size-10 rounded-full bg-primary/10 flex items-center justify-center text-primary active:scale-95 transition-transform">
+<span class="material-symbols-outlined">call</span>
+</button>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="group flex items-center gap-4 bg-background-light dark:bg-background-dark hover:bg-gray-50 dark:hover:bg-surface-dark px-4 min-h-[88px] py-3 justify-between border-b border-gray-100 dark:border-gray-800 transition-colors cursor-pointer">
+<div class="flex items-center gap-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-14 w-14 shadow-sm" data-alt="Portrait of a serious man with a beard" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAU1vtYdaYlh4KBGR8uyeyBRVVdfX6Ek2LSwMYL3ivwSeLzOA8OKASMogDAEl_lqCqVicR7GCIOpWy8hy4LzcNOBWK8sbVADXn5Rkb8viQ7DdXFMpDU15NO6P7uemFD_douptEZbpZIF9swnULKmplv5Oq7hbL708IlNHOFSAcrdCPWV8O_NgOn2zc_j_3JWSmkhJHHxrGiXEZqEyBCuoq7RSXUjohaB09kfOS7B68VbwyMe9_8fdBDaBQTULE-GbgQc3fTbP0NQCU");'></div>
+<div class="flex flex-col justify-center gap-1">
+<p class="text-slate-900 dark:text-white text-base font-bold leading-normal line-clamp-1">کربلایی حسین محمدی</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal line-clamp-1">تخصص: قرائت قرآن مجلسی، ختم</p>
+<div class="flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-yellow-500 text-[14px]">star</span>
+<span class="text-xs text-slate-500 dark:text-slate-400">۴.۵ (۴۵ نظر)</span>
+</div>
+</div>
+</div>
+<div class="shrink-0 flex gap-2">
+<button class="size-10 rounded-full bg-slate-100 dark:bg-white/5 flex items-center justify-center text-slate-900 dark:text-white active:scale-95 transition-transform">
+<span class="material-symbols-outlined">call</span>
+</button>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="group flex items-center gap-4 bg-background-light dark:bg-background-dark hover:bg-gray-50 dark:hover:bg-surface-dark px-4 min-h-[88px] py-3 justify-between border-b border-gray-100 dark:border-gray-800 transition-colors cursor-pointer">
+<div class="flex items-center gap-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-14 w-14 shadow-sm grayscale" data-alt="Black and white portrait of an older man" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBcb7xByGgkkZ8mpgK5iub0Vgm0Q_FKFh25R2m9H0IixGZIMeoRIW0OWmJFsWz-RZq_ae13-ku5OIVxguSdkKCsq4nA6oYETodQlHS7wjran9BK4Y36mb3B0KwZhViG6JuN9Nus6gu6fv3q1KQlKkd2mArzNtJtLLyVrnWfasG-0StnM9fZVKgLgoeMPAnOOWMVJqU2WzUp7VIsHHXTAqIXybwJRve4gtR4Ab7nsgPRdXBF_aoc-kqPulhkTmDgG6Plpjgea0HCL_0");'></div>
+<div class="flex flex-col justify-center gap-1">
+<p class="text-slate-900 dark:text-white text-base font-bold leading-normal line-clamp-1">سید مرتضی حسینی</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal line-clamp-1">تخصص: دعا خوانی کمیل و ندبه</p>
+<div class="flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-yellow-500 text-[14px]">star</span>
+<span class="text-xs text-slate-500 dark:text-slate-400">۵.۰ (۱۲ نظر)</span>
+</div>
+</div>
+</div>
+<div class="shrink-0 flex gap-2">
+<button class="size-10 rounded-full bg-slate-100 dark:bg-white/5 flex items-center justify-center text-slate-900 dark:text-white active:scale-95 transition-transform">
+<span class="material-symbols-outlined">call</span>
+</button>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="group flex items-center gap-4 bg-background-light dark:bg-background-dark hover:bg-gray-50 dark:hover:bg-surface-dark px-4 min-h-[88px] py-3 justify-between border-b border-gray-100 dark:border-gray-800 transition-colors cursor-pointer">
+<div class="flex items-center gap-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-14 w-14 shadow-sm" data-alt="Portrait of a middle aged man looking up" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCZ7lypKmtioZG3qFmz05M3BrQsAAyPrEpsXiPT5Coaq3u09Pt041kh2ZrwbctjbAQideAAnA1yw4Fjv4ZU6yHlhCZGBCrmwzk_zsGTERsytVL4HAIwWDMvpxjGOHKUN5evu5yOmoHI_aV7QICY_BbN_l-UVjPnFBe147itz1wTQqvBicElSj6lDZfuBZut7XthtJTitOjM0Z8zHo1m-Qoqfi1Tn6jjSuh1bjy31vfGatiwgR-RsRpW5aZkQLq7xWeHRor7QWumNSo");'></div>
+<div class="flex flex-col justify-center gap-1">
+<p class="text-slate-900 dark:text-white text-base font-bold leading-normal line-clamp-1">شیخ محمود کریمی</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal line-clamp-1">تخصص: سخنرانی مذهبی، منبر</p>
+<div class="flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-yellow-500 text-[14px]">star</span>
+<span class="text-xs text-slate-500 dark:text-slate-400">۴.۹ (۲۰۰+ نظر)</span>
+</div>
+</div>
+</div>
+<div class="shrink-0 flex gap-2">
+<button class="size-10 rounded-full bg-slate-100 dark:bg-white/5 flex items-center justify-center text-slate-900 dark:text-white active:scale-95 transition-transform">
+<span class="material-symbols-outlined">call</span>
+</button>
+</div>
+</div>
+<!-- Item 5 -->
+<div class="group flex items-center gap-4 bg-background-light dark:bg-background-dark hover:bg-gray-50 dark:hover:bg-surface-dark px-4 min-h-[88px] py-3 justify-between border-b border-gray-100 dark:border-gray-800 transition-colors cursor-pointer">
+<div class="flex items-center gap-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-14 w-14 shadow-sm" data-alt="Portrait of a young man with glasses" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBLPxFSe8NnVm35lcq2X_YzmEXHUukTwO9_K3FlBHxhLONGIpc0wkDPFkyveLmyPhPZ0PG1qcmr2OK3EGK8_pwRcITYYwJk9bO8wJc7iflTqU-ubW16xcEegUtLuEBQ65ci9ckMZyBRDXM7riO_0NNxzMUm82vSm9LlQFF4JQS9GsbAp4mULsebWLKVfypaCwYRtZcefSjXALTsF9hEOI9UNqJLc7kuvUD-WFR8gdUGGYR4aTFA_CvR7f3ECxSIJR36Kxz8RejzSH8");'></div>
+<div class="flex flex-col justify-center gap-1">
+<p class="text-slate-900 dark:text-white text-base font-bold leading-normal line-clamp-1">علی اکبری</p>
+<p class="text-slate-500 dark:text-slate-400 text-sm font-normal leading-normal line-clamp-1">تخصص: مداحی به زبان آذری</p>
+<div class="flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-yellow-500 text-[14px]">star</span>
+<span class="text-xs text-slate-500 dark:text-slate-400">جدید</span>
+</div>
+</div>
+</div>
+<div class="shrink-0 flex gap-2">
+<button class="size-10 rounded-full bg-slate-100 dark:bg-white/5 flex items-center justify-center text-slate-900 dark:text-white active:scale-95 transition-transform">
+<span class="material-symbols-outlined">call</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html class="dark" dir="rtl" lang="fa"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>تأیید درخواست تبلیغات</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700&amp;family=Noto+Sans+Arabic:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#3b82f6", // More vibrant blue for dark mode visibility
+                        "primary-dark": "#2563eb",
+                        "background-light": "#f8fafc",
+                        "background-dark": "#0f172a", // Darker slate
+                        "surface-dark": "#1e293b", // Slate 800
+                        "surface-light": "#ffffff",
+                        "success": "#10b981", // Emerald 500
+                    },
+                    fontFamily: {
+                        "display": ["Noto Sans Arabic", "Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            min-height: 100vh;min-height: 100dvh;
+        }::-webkit-scrollbar {
+            width: 0px;
+            background: transparent;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 min-h-screen flex flex-col overflow-x-hidden selection:bg-primary/30">
+<header class="sticky top-0 z-20 flex items-center justify-between px-4 py-3 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-slate-200 dark:border-slate-800/60">
+<div class="flex items-center">
+<button class="flex items-center justify-center w-10 h-10 rounded-full hover:bg-slate-200 dark:hover:bg-slate-800 transition-colors active:scale-95">
+<span class="material-symbols-outlined text-slate-700 dark:text-slate-200" style="font-size: 24px;">arrow_forward</span>
+</button>
+</div>
+<h1 class="text-base font-bold text-center absolute left-1/2 -translate-x-1/2 text-slate-800 dark:text-slate-100">تأیید درخواست</h1>
+<div class="w-10"></div> 
+</header>
+<main class="flex-1 flex flex-col items-center w-full max-w-md mx-auto px-5 pt-8 pb-4">
+<div class="flex flex-col items-center justify-center w-full mb-8 animate-[fade-in_0.5s_ease-out]">
+<div class="relative flex items-center justify-center w-28 h-28 mb-6">
+<div class="absolute inset-0 rounded-full bg-success/10 scale-125 animate-[pulse_3s_infinite]"></div>
+<div class="absolute inset-0 rounded-full bg-success/20 scale-100"></div>
+<div class="relative flex items-center justify-center w-full h-full rounded-full bg-gradient-to-br from-success to-emerald-600 shadow-xl shadow-success/20">
+<span class="material-symbols-outlined text-white" style="font-size: 56px; font-variation-settings: 'wght' 600;">check</span>
+</div>
+</div>
+<h2 class="text-2xl font-bold text-center text-slate-800 dark:text-white mb-3 tracking-tight">
+                درخواست شما ثبت شد!
+            </h2>
+<p class="text-slate-500 dark:text-slate-400 text-center text-sm px-2 leading-relaxed max-w-[280px]">
+                اطلاعات شما با موفقیت در سیستم ما ذخیره گردید. همکاران ما به زودی آن را بررسی می‌کنند.
+            </p>
+</div>
+<div class="w-full bg-surface-light dark:bg-surface-dark rounded-2xl p-5 shadow-sm border border-slate-100 dark:border-slate-700/50 mb-6 relative overflow-hidden group">
+<div class="absolute top-0 right-0 w-16 h-16 bg-gradient-to-bl from-primary/10 to-transparent rounded-bl-3xl -mr-2 -mt-2"></div>
+<div class="flex items-center gap-2.5 mb-5">
+<div class="w-8 h-8 rounded-lg bg-indigo-50 dark:bg-indigo-500/10 flex items-center justify-center">
+<span class="material-symbols-outlined text-indigo-600 dark:text-indigo-400" style="font-size: 20px;">receipt_long</span>
+</div>
+<span class="text-base font-bold text-slate-800 dark:text-white">خلاصه درخواست</span>
+</div>
+<div class="space-y-4">
+<div class="flex justify-between items-start pb-4 border-b border-dashed border-slate-100 dark:border-slate-700/50">
+<span class="text-slate-500 dark:text-slate-400 text-sm mt-0.5">نام کسب‌وکار</span>
+<span class="text-slate-900 dark:text-white text-sm font-semibold text-left max-w-[60%] leading-snug">سنگ مزار رضوی</span>
+</div>
+<div class="flex justify-between items-start pb-4 border-b border-dashed border-slate-100 dark:border-slate-700/50">
+<span class="text-slate-500 dark:text-slate-400 text-sm mt-0.5">نوع تبلیغ</span>
+<span class="text-slate-900 dark:text-white text-sm font-semibold text-left max-w-[60%] leading-snug">بنر صفحه اول (ویژه)</span>
+</div>
+<div class="flex justify-between items-center pt-1">
+<span class="text-slate-500 dark:text-slate-400 text-sm">کد پیگیری</span>
+<div class="flex items-center gap-2 bg-slate-50 dark:bg-slate-800/50 pr-3 pl-2 py-1.5 rounded-lg border border-slate-100 dark:border-slate-700/50 active:bg-slate-100 dark:active:bg-slate-700 transition-colors cursor-pointer">
+<span class="text-primary dark:text-primary-400 text-sm font-mono font-bold tracking-wider" dir="ltr">REQ-8821</span>
+<span class="material-symbols-outlined text-slate-400 text-[18px]">content_copy</span>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full relative overflow-hidden rounded-xl bg-blue-50/50 dark:bg-blue-900/10 border border-blue-100 dark:border-blue-500/20 p-4">
+<div class="flex gap-3">
+<div class="shrink-0 mt-0.5 w-6 h-6 rounded-full bg-blue-100 dark:bg-blue-500/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-blue-600 dark:text-blue-400" style="font-size: 16px; font-variation-settings: 'FILL' 1;">priority_high</span>
+</div>
+<div class="flex flex-col gap-1">
+<h4 class="text-sm font-bold text-slate-800 dark:text-slate-200">مراحل بعدی چیست؟</h4>
+<p class="text-slate-600 dark:text-slate-400 text-xs leading-6 text-justify">
+                        کارشناسان ما درخواست شما را بررسی کرده و حداکثر تا <span class="font-bold text-slate-700 dark:text-slate-300">۲۴ ساعت آینده</span> جهت نهایی‌سازی محتوا و هماهنگی پرداخت با شما تماس خواهند گرفت.
+                    </p>
+</div>
+</div>
+</div>
+</main>
+<div class="w-full max-w-md mx-auto p-5 pb-8 mt-auto bg-gradient-to-t from-background-light via-background-light to-transparent dark:from-background-dark dark:via-background-dark dark:to-transparent z-10">
+<div class="flex flex-col gap-3">
+<button class="w-full bg-primary hover:bg-primary-dark text-white font-bold h-14 rounded-xl flex items-center justify-center gap-2 transition-all shadow-lg shadow-blue-500/20 active:scale-[0.98]">
+<span>بازگشت به خانه</span>
+<span class="material-symbols-outlined" style="font-size: 20px;">home</span>
+</button>
+<button class="w-full bg-surface-light dark:bg-surface-dark border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800 text-slate-700 dark:text-slate-300 font-medium h-14 rounded-xl flex items-center justify-center gap-2 transition-all active:bg-slate-100 dark:active:bg-slate-700">
+<span>پیگیری درخواست‌ها</span>
+<span class="material-symbols-outlined text-slate-400" style="font-size: 20px;">history</span>
+</button>
+</div>
+</div>
+
+</body></html>

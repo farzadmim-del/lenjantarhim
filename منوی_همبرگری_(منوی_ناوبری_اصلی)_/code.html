@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html class="dark" dir="rtl" lang="fa"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Cemetery App Navigation Drawer</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1152d4",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                        "surface-dark": "#1a2230", 
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        /* Custom scrollbar for webkit browsers to look cleaner in the drawer */
+        ::-webkit-scrollbar {
+            width: 4px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #334155;
+            border-radius: 4px;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display antialiased overflow-hidden">
+<!-- App Container -->
+<div class="relative flex h-full min-h-screen w-full flex-col overflow-hidden">
+<!-- Background Simulation (Main App Screen blurred behind) -->
+<div class="absolute inset-0 z-0 bg-[url('https://images.unsplash.com/photo-1518175486749-839352e0026a?q=80&amp;w=2574&amp;auto=format&amp;fit=crop')] bg-cover bg-center opacity-20 pointer-events-none" data-alt="Abstract blurred background of a cemetery landscape"></div>
+<!-- Navigation Drawer Overlay -->
+<div class="absolute inset-0 z-50 flex h-full w-full bg-black/60 backdrop-blur-sm transition-opacity">
+<!-- Drawer Panel -->
+<!-- Sliding from Right for RTL -->
+<div class="flex h-full w-[85%] max-w-[320px] flex-col bg-background-dark shadow-2xl transition-transform">
+<!-- Close Button & Header Area -->
+<div class="flex flex-col gap-4 p-6 pb-2">
+<div class="flex items-center justify-between">
+<!-- User Profile Summary -->
+<div class="flex items-center gap-3">
+<div class="relative size-12 overflow-hidden rounded-full border-2 border-primary/30">
+<img alt="User Profile" class="h-full w-full object-cover" data-alt="Portrait of a young man looking calm" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCK2JHZwHSnWatBgi3crHxNBVbIjWacPvO7m1AioGWOdnlBjCj9vX6vesD3nr29cCLJAPu3Text9pdFlWFJHsm9YPmbyKB-NfjYiZJBp0MfsagUbm97-b8poCjDZhwFet1Di_vDuvdpVeTnl8suikSMC-nsFN4KqtDcmsqRvxre5KCbrJwC-R_L0W7JLi7YPMLy0rxLVI_R1VMB2fiUfS2XlC1uI2lgpoCHxn_PHj8XiLH6SUYb0Jz0p27x1TfGerO7rKNIUaIfyxs"/>
+</div>
+<div>
+<h2 class="text-lg font-bold text-white leading-tight">سلام، علی</h2>
+<a class="text-xs text-primary font-medium hover:text-blue-400 transition-colors" href="#">مشاهده پروفایل</a>
+</div>
+</div>
+<!-- Close Button -->
+<button class="flex size-8 items-center justify-center rounded-full bg-white/5 text-white hover:bg-white/10 transition-colors">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+</div>
+<!-- Scrollable Menu Items -->
+<div class="flex-1 overflow-y-auto px-4 py-2">
+<ul class="flex flex-col gap-2">
+<!-- Main Navigation Group -->
+<li>
+<p class="px-4 pb-2 pt-4 text-xs font-bold text-slate-500 uppercase tracking-wider">منوی اصلی</p>
+</li>
+<!-- Active Item -->
+<li>
+<a class="group flex h-12 items-center gap-4 rounded-xl bg-primary px-4 text-white shadow-lg shadow-primary/20 transition-all" href="#">
+<span class="material-symbols-outlined filled-icon">home</span>
+<span class="text-base font-bold leading-tight">خانه</span>
+</a>
+</li>
+<li>
+<a class="group flex h-12 items-center gap-4 rounded-xl px-4 text-slate-300 hover:bg-surface-dark hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined">search</span>
+<span class="text-base font-medium leading-tight">جستجو</span>
+</a>
+</li>
+<li>
+<a class="group flex h-12 items-center gap-4 rounded-xl px-4 text-slate-300 hover:bg-surface-dark hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined">menu_book</span>
+<span class="text-base font-medium leading-tight">آلبوم متوفیات</span>
+</a>
+</li>
+<li>
+<a class="group flex h-12 items-center gap-4 rounded-xl px-4 text-slate-300 hover:bg-surface-dark hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined">favorite</span>
+<span class="text-base font-medium leading-tight">علاقه‌مندی‌ها</span>
+</a>
+</li>
+<!-- Divider -->
+<li class="my-2 border-t border-slate-800"></li>
+<!-- Secondary Group -->
+<li>
+<p class="px-4 pb-2 pt-2 text-xs font-bold text-slate-500 uppercase tracking-wider">خدمات</p>
+</li>
+<li>
+<a class="group flex h-12 items-center gap-4 rounded-xl px-4 text-slate-300 hover:bg-surface-dark hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined">campaign</span>
+<span class="text-base font-medium leading-tight">تبلیغات و همکاری</span>
+</a>
+</li>
+<li>
+<a class="group flex h-12 items-center gap-4 rounded-xl px-4 text-slate-300 hover:bg-surface-dark hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined">help</span>
+<span class="text-base font-medium leading-tight">راهنما و سوالات متداول</span>
+</a>
+</li>
+<!-- Divider -->
+<li class="my-2 border-t border-slate-800"></li>
+<!-- App Settings Group -->
+<li>
+<a class="group flex h-12 items-center gap-4 rounded-xl px-4 text-slate-300 hover:bg-surface-dark hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span class="text-base font-medium leading-tight">تنظیمات</span>
+</a>
+</li>
+<li>
+<a class="group flex h-12 items-center gap-4 rounded-xl px-4 text-slate-300 hover:bg-surface-dark hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined">call</span>
+<span class="text-base font-medium leading-tight">تماس با ما</span>
+</a>
+</li>
+<li>
+<a class="group flex h-12 items-center gap-4 rounded-xl px-4 text-slate-300 hover:bg-surface-dark hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined">info</span>
+<span class="text-base font-medium leading-tight">درباره ما</span>
+</a>
+</li>
+</ul>
+</div>
+<!-- Footer / Logout -->
+<div class="border-t border-slate-800 p-4">
+<a class="group flex h-12 items-center gap-4 rounded-xl px-4 text-red-400 hover:bg-red-500/10 hover:text-red-300 transition-all" href="#">
+<span class="material-symbols-outlined transform scale-x-[-1]">logout</span> <!-- Flipped logout icon for RTL context if needed, though standard logout usually points right. scale-x-[-1] makes it point left (exit) -->
+<span class="text-base font-bold leading-tight">خروج از حساب</span>
+</a>
+<div class="mt-4 flex justify-center">
+<p class="text-xs text-slate-600">نسخه ۱.۰.۲</p>
+</div>
+</div>
+</div>
+<!-- Tap outside to close area -->
+<div class="flex-1"></div>
+</div>
+</div>
+<script>
+        // Optional: Add filled class to active icons if needed by the font variant
+        // The Google Font link provided includes FILL axis.
+        document.querySelectorAll('.filled-icon').forEach(icon => {
+            icon.style.fontVariationSettings = "'FILL' 1";
+        });
+    </script>
+</body></html>

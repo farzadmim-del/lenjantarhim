@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+
+<html class="dark" dir="rtl" lang="fa"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>لیست کرایه ظروف</title>
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&amp;family=Noto+Sans+Arabic:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Theme Configuration -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1152d4",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                        "surface-dark": "#1c2433", // Slightly lighter for cards in dark mode
+                        "surface-light": "#ffffff",
+                    },
+                    fontFamily: {
+                        "display": ["Plus Jakarta Sans", "Noto Sans Arabic", "sans-serif"],
+                        "body": ["Plus Jakarta Sans", "Noto Sans Arabic", "sans-serif"],
+                    },
+                    borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Plus Jakarta Sans', 'Noto Sans Arabic', sans-serif;
+        }
+        /* Hide scrollbar for chrome/safari/opera */
+        .no-scrollbar::-webkit-scrollbar {
+          display: none;
+        }
+        /* Hide scrollbar for IE, Edge and Firefox */
+        .no-scrollbar {
+          -ms-overflow-style: none;  /* IE and Edge */
+          scrollbar-width: none;  /* Firefox */
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white min-h-screen flex flex-col items-center">
+<!-- Mobile Container -->
+<div class="w-full max-w-md bg-background-light dark:bg-background-dark min-h-screen flex flex-col relative shadow-2xl overflow-hidden">
+<!-- Top App Bar -->
+<header class="flex items-center justify-between p-4 pb-2 sticky top-0 z-20 bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-sm">
+<button class="flex items-center justify-center size-10 rounded-full text-slate-900 dark:text-white hover:bg-black/5 dark:hover:bg-white/10 transition-colors">
+<span class="material-symbols-outlined text-[24px]">arrow_forward</span>
+</button>
+<h1 class="text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">لیست کرایه ظروف</h1>
+<button class="flex items-center justify-center size-10 rounded-full text-slate-900 dark:text-white hover:bg-black/5 dark:hover:bg-white/10 transition-colors relative">
+<span class="material-symbols-outlined text-[24px]">filter_list</span>
+<span class="absolute top-2 left-2 size-2 bg-primary rounded-full border-2 border-background-light dark:border-background-dark"></span>
+</button>
+</header>
+<!-- Search Bar -->
+<div class="px-4 py-2 sticky top-[60px] z-10 bg-background-light dark:bg-background-dark">
+<div class="flex w-full items-center rounded-full h-12 bg-surface-light dark:bg-surface-dark shadow-sm ring-1 ring-black/5 dark:ring-white/5 group focus-within:ring-2 focus-within:ring-primary transition-all">
+<div class="flex items-center justify-center pr-4 pl-2 text-slate-400">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="flex-1 bg-transparent border-none text-base text-slate-900 dark:text-white placeholder:text-slate-400 focus:ring-0 px-2 h-full" placeholder="جستجو در نام فروشگاه یا تجهیزات..." type="text"/>
+</div>
+</div>
+<!-- Scrollable Content -->
+<main class="flex-1 flex flex-col overflow-y-auto no-scrollbar pb-24">
+<!-- Categories / Chips -->
+<div class="w-full overflow-x-auto no-scrollbar px-4 py-3 flex gap-2">
+<button class="shrink-0 flex items-center justify-center h-9 px-5 rounded-full bg-primary text-white text-sm font-medium transition-colors shadow-lg shadow-primary/20">
+                    همه
+                </button>
+<button class="shrink-0 flex items-center justify-center h-9 px-5 rounded-full bg-surface-light dark:bg-surface-dark border border-black/5 dark:border-white/5 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-white/5 text-sm font-medium transition-colors">
+                    میز و صندلی
+                </button>
+<button class="shrink-0 flex items-center justify-center h-9 px-5 rounded-full bg-surface-light dark:bg-surface-dark border border-black/5 dark:border-white/5 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-white/5 text-sm font-medium transition-colors">
+                    ظروف پذیرایی
+                </button>
+<button class="shrink-0 flex items-center justify-center h-9 px-5 rounded-full bg-surface-light dark:bg-surface-dark border border-black/5 dark:border-white/5 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-white/5 text-sm font-medium transition-colors">
+                    سیستم صوتی
+                </button>
+<button class="shrink-0 flex items-center justify-center h-9 px-5 rounded-full bg-surface-light dark:bg-surface-dark border border-black/5 dark:border-white/5 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-white/5 text-sm font-medium transition-colors">
+                    سرمایش و گرمایش
+                </button>
+</div>
+<!-- Promoted/Featured Section (Optional) -->
+<div class="px-4 py-2">
+<div class="flex items-center gap-2 mb-3">
+<span class="material-symbols-outlined text-amber-500 text-sm">stars</span>
+<h3 class="text-sm font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">پیشنهاد ویژه</h3>
+</div>
+<!-- Featured Card -->
+<div class="relative w-full h-48 rounded-2xl overflow-hidden group cursor-pointer mb-2">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Elegant dining table setup with candles and flowers" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDHSinI0vOPgdRDIbLzQEKAgJy6hMj7LKuikz0YeVtBQAonBlmwgbcOHyyAiN2ktXK3HOxrvTwipVatM8EiQ5D7hS-Ajs7G-y7uqO9VOndtS1nY4HHgk-4GH63kJ9aK5Dd8iJYOFH8KtUsJWUIAGNd_gOhC8yQikVmVnfjj8jQCJ_29I3hR4xtGN6V5UVvAct27QSGwH4-6davwfBjkFueuqr7XqgdiNypV44XaxWG6g8NBOLbWGV8TXCWGPqDRGNP1PJsE2RZkhLM')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+<div class="absolute bottom-0 right-0 p-4 w-full">
+<div class="flex justify-between items-end">
+<div>
+<span class="bg-primary text-white text-[10px] font-bold px-2 py-1 rounded mb-2 inline-block">تخفیف ویژه</span>
+<h4 class="text-white text-lg font-bold mb-1">تشریفات مجالس رویال</h4>
+<p class="text-slate-200 text-xs">ارائه دهنده لوکس‌ترین ظروف و میز شام</p>
+</div>
+<button class="bg-white/20 backdrop-blur-md hover:bg-white/30 text-white p-2 rounded-full transition-colors">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- List Items -->
+<div class="flex flex-col gap-3 px-4 mt-2">
+<!-- Item 1 -->
+<div class="group flex p-3 bg-surface-light dark:bg-surface-dark rounded-2xl gap-3 border border-transparent hover:border-primary/20 transition-all shadow-sm">
+<div class="shrink-0 relative size-20 rounded-xl overflow-hidden bg-slate-200 dark:bg-slate-800">
+<img alt="Stacked white chairs for events" class="w-full h-full object-cover" data-alt="Stacked white event chairs" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCtloEnZEz0zKdPDrXWrUb53iO01liIzs0oflGmWiNUgfrVnA1UYD2VIANunQ4KtRjJp-_2bIxxgZXbkDchB4lck07i6G8MUO_kV0JMl5AwvE-35SzkMVwFZJ2G7BwgH_HW4JhgbbaI7MG45FpzYWlWpJ93MsO4hv4glMw0qB6tpjmlFvrPsC0krWdm9GVG9EHXm08vqTTNwmIfeip2UODOo9dArFPHNDIZtHQa2xXkoBVwR2KB9DUlBsqYprT9cCS-eUF_Mobkl4"/>
+<div class="absolute top-1 right-1 bg-green-500 text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full shadow-sm">باز است</div>
+</div>
+<div class="flex flex-col flex-1 justify-between py-0.5">
+<div class="flex justify-between items-start">
+<h3 class="text-slate-900 dark:text-white font-bold text-base line-clamp-1">ظروف کرایه برادران محمدی</h3>
+<button class="text-slate-400 hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-xl">favorite</span>
+</button>
+</div>
+<p class="text-slate-500 dark:text-slate-400 text-xs line-clamp-1">میز، صندلی تاشو، ظروف چینی و ملامین</p>
+<div class="flex items-center gap-1 text-slate-400 text-xs mt-1">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+<span>تهران، خیابان پیروزی</span>
+</div>
+<div class="flex items-center justify-between mt-2">
+<div class="flex gap-1">
+<span class="bg-slate-100 dark:bg-white/5 text-slate-600 dark:text-slate-300 text-[10px] px-2 py-0.5 rounded-full">ارسال فوری</span>
+</div>
+<button class="bg-primary hover:bg-blue-600 text-white text-xs font-bold py-1.5 px-3 rounded-lg flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[16px]">call</span>
+<span>تماس</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="group flex p-3 bg-surface-light dark:bg-surface-dark rounded-2xl gap-3 border border-transparent hover:border-primary/20 transition-all shadow-sm">
+<div class="shrink-0 relative size-20 rounded-xl overflow-hidden bg-slate-200 dark:bg-slate-800">
+<img alt="Professional sound system speakers" class="w-full h-full object-cover" data-alt="Sound system speakers" src="https://lh3.googleusercontent.com/aida-public/AB6AXuABIYFJpoHMlnd5JCpC8OQMHtM50B8deZ5sWwZIy2WOJ7YMlZsXrdfd_jc6jPUJ7Oa_W0kj26VsxDuwR-WBYqboadh4lU9aeSIXDMXO262qfZlkxOl09t7w0hrwP9q1SYKtQ6OSUHEyjmQ9YBL7oPrAgzA0-EHSq9npg1Ypx-nXFWOFDv2AwMKAhIp0eDqFzbRfNohDJ2nz6BmCbqiIOSlVLPJeLAffmDlNBLzCPo4XU7fIKB61A630X-Pm3XDhauHiKR7SV2TKb_U"/>
+</div>
+<div class="flex flex-col flex-1 justify-between py-0.5">
+<div class="flex justify-between items-start">
+<h3 class="text-slate-900 dark:text-white font-bold text-base line-clamp-1">تجهیزات صوتی آوا</h3>
+<button class="text-slate-400 hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-xl">favorite</span>
+</button>
+</div>
+<p class="text-slate-500 dark:text-slate-400 text-xs line-clamp-1">باند، اکو، میکروفون و مداح</p>
+<div class="flex items-center gap-1 text-slate-400 text-xs mt-1">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+<span>بهشت زهرا، قطعه شهدا</span>
+</div>
+<div class="flex items-center justify-between mt-2">
+<div class="flex gap-1">
+<span class="bg-slate-100 dark:bg-white/5 text-slate-600 dark:text-slate-300 text-[10px] px-2 py-0.5 rounded-full">نصب رایگان</span>
+</div>
+<button class="bg-primary/10 hover:bg-primary/20 text-primary text-xs font-bold py-1.5 px-3 rounded-lg flex items-center gap-1 transition-colors">
+<span>مشاهده</span>
+<span class="material-symbols-outlined text-[16px] rotate-180">arrow_right_alt</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="group flex p-3 bg-surface-light dark:bg-surface-dark rounded-2xl gap-3 border border-transparent hover:border-primary/20 transition-all shadow-sm">
+<div class="shrink-0 relative size-20 rounded-xl overflow-hidden bg-slate-200 dark:bg-slate-800">
+<img alt="Outdoor heater lamp" class="w-full h-full object-cover" data-alt="Outdoor heater lamp" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAz_YZxyeVN3vUgL5gTRI7dGOhj-D81Mse98KHvUQYwh8vTddWkv0GKYVlgCZrbQpCqe-1iZpGEn6wit0kKgU-isD-rssmlSDPZHpkBA1ziPu46JffLPqIKUBcNyuo52WDZbbAUh4Z-U8rQozYW_GHEko9dFi9VQD-I-hFHZDBZ1Hy6iSxbf3_T9FSGFXUbvqMbfJ2T9gnFFkWrdvxKdogC-SYvywVdybj_Olf5CrX4kzN0hyRrQleycVvJg4v5i0eVJxYadUGhwt8"/>
+<div class="absolute top-1 right-1 bg-amber-500 text-white text-[10px] font-bold px-1.5 py-0.5 rounded-full shadow-sm">شلوغ</div>
+</div>
+<div class="flex flex-col flex-1 justify-between py-0.5">
+<div class="flex justify-between items-start">
+<h3 class="text-slate-900 dark:text-white font-bold text-base line-clamp-1">خدمات مجالس نور</h3>
+<button class="text-slate-400 hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-xl">favorite</span>
+</button>
+</div>
+<p class="text-slate-500 dark:text-slate-400 text-xs line-clamp-1">بخاری، سایبان، فرش و موکت</p>
+<div class="flex items-center gap-1 text-slate-400 text-xs mt-1">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+<span>تهران، افسریه</span>
+</div>
+<div class="flex items-center justify-between mt-2">
+<div class="flex gap-1">
+<span class="bg-slate-100 dark:bg-white/5 text-slate-600 dark:text-slate-300 text-[10px] px-2 py-0.5 rounded-full">تنوع بالا</span>
+</div>
+<button class="bg-primary hover:bg-blue-600 text-white text-xs font-bold py-1.5 px-3 rounded-lg flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[16px]">call</span>
+<span>تماس</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Item 4 -->
+<div class="group flex p-3 bg-surface-light dark:bg-surface-dark rounded-2xl gap-3 border border-transparent hover:border-primary/20 transition-all shadow-sm">
+<div class="shrink-0 relative size-20 rounded-xl overflow-hidden bg-slate-200 dark:bg-slate-800">
+<img alt="Fancy plates and cutlery" class="w-full h-full object-cover" data-alt="Fancy plates and cutlery" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDI8ocghK9rN0Cbl8VlwJMoaPmsvWNCSdeKMmN2zA1Qb7puPCUrSD5_MpEDYOt1vjJM1neEK7DLokWH_EL7tHZLOEsAKFU6bLSezR6QTYm_FkGi7mMuB-AwjoLmpXsJFTltS3mrewLUqNbd47R79yeO0WWrCt4uxQGYSYQf_WLP4aNYQx2ZDPCl6S3F5Y9fiW4voj0ICX59qYR5THXen88rz1sF1k7OgcM_er8LelZfhMLAsWJwT_2XYdHKBdjZA7fRucyw15AU9BA"/>
+</div>
+<div class="flex flex-col flex-1 justify-between py-0.5">
+<div class="flex justify-between items-start">
+<h3 class="text-slate-900 dark:text-white font-bold text-base line-clamp-1">ظروف لوکس تشریفات</h3>
+<button class="text-slate-400 hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-xl">favorite</span>
+</button>
+</div>
+<p class="text-slate-500 dark:text-slate-400 text-xs line-clamp-1">سرویس‌های VIP و هتلی</p>
+<div class="flex items-center gap-1 text-slate-400 text-xs mt-1">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+<span>تهران، نیاوران</span>
+</div>
+<div class="flex items-center justify-between mt-2">
+<div class="flex gap-1">
+<span class="bg-slate-100 dark:bg-white/5 text-slate-600 dark:text-slate-300 text-[10px] px-2 py-0.5 rounded-full">VIP</span>
+</div>
+<button class="bg-primary hover:bg-blue-600 text-white text-xs font-bold py-1.5 px-3 rounded-lg flex items-center gap-1 transition-colors">
+<span class="material-symbols-outlined text-[16px]">call</span>
+<span>تماس</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Spacer -->
+<div class="h-6"></div>
+</main>
+<!-- Floating Action Button (Map) -->
+<div class="absolute bottom-24 left-4 z-30">
+<button class="flex items-center gap-2 bg-surface-dark dark:bg-white text-white dark:text-black px-4 py-3 rounded-full shadow-xl hover:shadow-2xl transition-transform active:scale-95">
+<span class="material-symbols-outlined">map</span>
+<span class="font-bold text-sm">نقشه</span>
+</button>
+</div>
+<!-- Bottom Navigation -->
+<nav class="absolute bottom-0 w-full bg-surface-light/95 dark:bg-surface-dark/95 backdrop-blur-md border-t border-black/5 dark:border-white/5 pb-5 pt-3 px-6 flex justify-between items-center z-40">
+<button class="flex flex-col items-center gap-1 text-slate-400 hover:text-primary transition-colors">
+<span class="material-symbols-outlined">home</span>
+<span class="text-[10px] font-medium">خانه</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-primary">
+<span class="material-symbols-outlined fill-current">storefront</span>
+<span class="text-[10px] font-bold">خدمات</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-slate-400 hover:text-primary transition-colors">
+<span class="material-symbols-outlined">newspaper</span>
+<span class="text-[10px] font-medium">آگهی‌ها</span>
+</button>
+<button class="flex flex-col items-center gap-1 text-slate-400 hover:text-primary transition-colors">
+<span class="material-symbols-outlined">person</span>
+<span class="text-[10px] font-medium">پروفایل</span>
+</button>
+</nav>
+</div>
+</body></html>

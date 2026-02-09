@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+
+<html class="dark" dir="rtl" lang="fa"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>لیست چاپخانه‌ها</title>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;family=Noto+Sans+Arabic:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1152d4",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                        "surface-light": "#ffffff",
+                        "surface-dark": "#1C232E",
+                        "surface-dark-highlight": "#282e39",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "Noto Sans Arabic", "sans-serif"],
+                        "sans": ["Inter", "Noto Sans Arabic", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        /* Custom scrollbar hiding for clean UI */
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-900 dark:text-white transition-colors duration-200">
+<div class="relative flex h-full min-h-screen w-full flex-col overflow-x-hidden">
+<!-- TopAppBar -->
+<header class="sticky top-0 z-10 bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-md border-b border-gray-200 dark:border-gray-800 transition-colors">
+<div class="flex items-center p-4 justify-between h-16">
+<!-- Back Button (Right in RTL) -->
+<button class="flex size-10 shrink-0 items-center justify-center rounded-full hover:bg-black/5 dark:hover:bg-white/10 transition-colors">
+<span class="material-symbols-outlined text-gray-900 dark:text-white" style="font-size: 24px;">arrow_forward</span>
+</button>
+<!-- Title -->
+<h2 class="text-lg font-bold leading-tight tracking-tight flex-1 text-center">لیست چاپخانه‌ها</h2>
+<!-- Placeholder for balance or extra action -->
+<div class="size-10"></div>
+</div>
+</header>
+<!-- SearchBar -->
+<div class="px-4 py-4 w-full">
+<label class="flex flex-col h-12 w-full">
+<div class="flex w-full flex-1 items-stretch rounded-xl h-full shadow-sm bg-surface-light dark:bg-surface-dark-highlight border border-gray-200 dark:border-transparent transition-colors overflow-hidden group focus-within:ring-2 focus-within:ring-primary focus-within:border-primary">
+<div class="flex items-center justify-center pr-4 pl-2 text-gray-400 dark:text-gray-400">
+<span class="material-symbols-outlined" style="font-size: 24px;">search</span>
+</div>
+<input class="flex w-full min-w-0 flex-1 resize-none bg-transparent border-none text-gray-900 dark:text-white placeholder:text-gray-400 focus:outline-0 focus:ring-0 h-full text-base font-normal leading-normal px-2" placeholder="جستجو نام چاپخانه، خدمات..." value=""/>
+<div class="flex items-center justify-center pl-4 pr-2 border-r border-gray-200 dark:border-gray-700 h-2/3 my-auto">
+<button class="text-primary p-1">
+<span class="material-symbols-outlined" style="font-size: 24px;">tune</span>
+</button>
+</div>
+</div>
+</label>
+</div>
+<!-- Chips / Filters -->
+<div class="flex gap-3 px-4 pb-4 overflow-x-auto no-scrollbar w-full">
+<!-- Active Chip -->
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-primary px-5 shadow-md shadow-primary/20 transition-transform active:scale-95">
+<p class="text-white text-sm font-medium leading-normal">همه</p>
+</button>
+<!-- Inactive Chips -->
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-surface-light dark:bg-surface-dark-highlight border border-gray-200 dark:border-transparent px-5 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
+<p class="text-gray-600 dark:text-gray-300 text-sm font-medium leading-normal">آگهی ترحیم</p>
+</button>
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-surface-light dark:bg-surface-dark-highlight border border-gray-200 dark:border-transparent px-5 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
+<p class="text-gray-600 dark:text-gray-300 text-sm font-medium leading-normal">بنر تسلیت</p>
+</button>
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-surface-light dark:bg-surface-dark-highlight border border-gray-200 dark:border-transparent px-5 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
+<p class="text-gray-600 dark:text-gray-300 text-sm font-medium leading-normal">کارت دعوت</p>
+</button>
+<button class="flex h-9 shrink-0 items-center justify-center gap-x-2 rounded-full bg-surface-light dark:bg-surface-dark-highlight border border-gray-200 dark:border-transparent px-5 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
+<p class="text-gray-600 dark:text-gray-300 text-sm font-medium leading-normal">چاپ عکس</p>
+</button>
+</div>
+<!-- List Content -->
+<div class="flex flex-col gap-4 px-4 pb-20">
+<!-- Sponsored Item -->
+<div class="group flex flex-col gap-3 bg-surface-light dark:bg-surface-dark rounded-xl p-4 shadow-sm border-2 border-primary/30 relative overflow-hidden transition-all hover:shadow-md hover:border-primary/50">
+<div class="absolute top-0 left-0 bg-primary px-3 py-1 rounded-br-lg z-10">
+<span class="text-[10px] font-bold text-white uppercase tracking-wider">ویژه</span>
+</div>
+<div class="flex gap-4 items-start">
+<!-- Image -->
+<div class="shrink-0">
+<div class="bg-gray-200 dark:bg-gray-700 bg-center bg-no-repeat bg-cover rounded-lg size-[72px] shadow-inner" data-alt="Modern print shop logo with blue colors" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBCztbxYFTD12PwuPQqB6nSUbV8hRQEhgZma4fG24ZesxUrZnYXQI6UgchhAUvM9TSl4aJi07H5drc0kNeXC6ds4nmgAyA_G08Ss39G5ajFcKxoY811Prbr__FTtj4yG1PjqMVQhQ-pHJJUJnzz2ujJmqfsTG2HRe4qDOg5wFEnBdmNAPsLmsGtTTNq1GsEAcCfwNX83JcDOPS65BlwJmLna4quXFvNrHqprUf3uJB0flTTfBs0EfquzNmyxMayLbtJS8DYhzpLJW4");'>
+</div>
+</div>
+<!-- Content -->
+<div class="flex flex-1 flex-col justify-center gap-1 min-w-0">
+<div class="flex items-center gap-2">
+<h3 class="text-gray-900 dark:text-white text-base font-bold leading-tight truncate">چاپخانه مرکزی تهران</h3>
+<span class="material-symbols-outlined text-blue-500 text-[16px]" title="تایید شده">verified</span>
+</div>
+<div class="flex items-center gap-1 text-gray-500 dark:text-gray-400 text-xs">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+<span class="truncate" data-location="Tehran">میدان انقلاب، کارگر شمالی</span>
+</div>
+<div class="flex flex-wrap gap-1 mt-1">
+<span class="inline-flex items-center rounded-md bg-blue-50 dark:bg-blue-900/30 px-2 py-0.5 text-xs font-medium text-blue-700 dark:text-blue-300 ring-1 ring-inset ring-blue-700/10">بنر فوری</span>
+<span class="inline-flex items-center rounded-md bg-gray-50 dark:bg-gray-800 px-2 py-0.5 text-xs font-medium text-gray-600 dark:text-gray-300 ring-1 ring-inset ring-gray-500/10">آگهی ترحیم</span>
+</div>
+</div>
+<!-- Arrow -->
+<div class="shrink-0 self-center">
+<span class="material-symbols-outlined text-gray-400 group-hover:text-primary transition-colors" style="font-size: 24px;">chevron_left</span>
+</div>
+</div>
+<!-- Quick Actions (Only for sponsored/expanded view if needed, keeping it simple here) -->
+<div class="flex gap-2 mt-1 pt-3 border-t border-gray-100 dark:border-gray-800">
+<button class="flex-1 flex items-center justify-center gap-2 h-9 rounded-lg bg-primary/10 hover:bg-primary/20 text-primary text-sm font-medium transition-colors">
+<span class="material-symbols-outlined text-[18px]">call</span>
+                        تماس
+                    </button>
+<button class="flex-1 flex items-center justify-center gap-2 h-9 rounded-lg bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-700 dark:text-gray-300 text-sm font-medium transition-colors">
+<span class="material-symbols-outlined text-[18px]">map</span>
+                        مسیریابی
+                    </button>
+</div>
+</div>
+<!-- Standard Item 1 -->
+<div class="group flex gap-4 bg-surface-light dark:bg-surface-dark rounded-xl p-3 shadow-sm border border-gray-100 dark:border-gray-800 items-center transition-all hover:bg-gray-50 dark:hover:bg-[#232b38]">
+<div class="bg-gray-200 dark:bg-gray-700 bg-center bg-no-repeat bg-cover rounded-lg size-[64px] shrink-0" data-alt="Minimalist abstract logo for a print shop" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB-PaTzq8gNqyLhBqehwwBfao3E_kaMghT4AbM07BkTmwzxO85sG1U6ixmB7cd7z3TdSF90241ewybsU3tcwY6eOIGMICPgL_CU59xwokyr1hlPmZhkporWPd91_QUaiqbPIfn5xWY3ITKBSZehq-YBGOxrs_Sn20stAsAqpSGZ8KKX3S9DIj5Y9G6Kq2MZ0OrToCmAv78Jy0iz6CCrZVUHLRpm910Yxn-GLyyH2UkAqOu5Doc_ELnqNu4bm5ER9XY_tVMz15uqPVY");'>
+</div>
+<div class="flex flex-1 flex-col justify-center gap-1 min-w-0">
+<h3 class="text-gray-900 dark:text-white text-base font-semibold leading-normal truncate">مجتمع چاپ نگار</h3>
+<div class="flex items-center gap-1 text-gray-500 dark:text-gray-400 text-xs">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+<span class="truncate" data-location="Tehran">خیابان آزادی، نبش جیحون</span>
+</div>
+<p class="text-gray-500 dark:text-gray-400 text-xs truncate mt-0.5">خدمات: چاپ بنر، استند، کارت ویزیت</p>
+</div>
+<div class="shrink-0 pl-1">
+<span class="material-symbols-outlined text-gray-400 group-hover:text-gray-600 dark:group-hover:text-gray-200 transition-colors" style="font-size: 24px;">chevron_left</span>
+</div>
+</div>
+<!-- Standard Item 2 -->
+<div class="group flex gap-4 bg-surface-light dark:bg-surface-dark rounded-xl p-3 shadow-sm border border-gray-100 dark:border-gray-800 items-center transition-all hover:bg-gray-50 dark:hover:bg-[#232b38]">
+<div class="bg-gray-200 dark:bg-gray-700 bg-center bg-no-repeat bg-cover rounded-lg size-[64px] shrink-0" data-alt="Colorful abstract shape representing digital printing" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBIvISi0vHNBgguNrwPIn1F3Hr2y_mizAQwfhuDIsfdqlESWCSUH6osLCp8AFXdKUZjSYzh6foFehXIygSNXaPnt8SN1C66i2vP5ggG7-KZuxmN8Bned6NP4PQTeIyuPEX3LZSkR2OwHzftFic3wAktm7bM4UqHuA4iZiNJLe5AguSsC51nAIxyaSiRjHF0lhZ-JWZ_k5m3xRUuX_iKrch0pDEEOlAEvtIO1NJKMPvFf39dM72YlprF1JscqntzUUBiOowb0-5xrsg");'>
+</div>
+<div class="flex flex-1 flex-col justify-center gap-1 min-w-0">
+<h3 class="text-gray-900 dark:text-white text-base font-semibold leading-normal truncate">چاپ دیجیتال پردیس</h3>
+<div class="flex items-center gap-1 text-gray-500 dark:text-gray-400 text-xs">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+<span class="truncate" data-location="Tehran">ستارخان، برق آلستوم</span>
+</div>
+<p class="text-gray-500 dark:text-gray-400 text-xs truncate mt-0.5">خدمات: اعلامیه فوری، قاب عکس</p>
+</div>
+<div class="shrink-0 pl-1">
+<span class="material-symbols-outlined text-gray-400 group-hover:text-gray-600 dark:group-hover:text-gray-200 transition-colors" style="font-size: 24px;">chevron_left</span>
+</div>
+</div>
+<!-- Standard Item 3 -->
+<div class="group flex gap-4 bg-surface-light dark:bg-surface-dark rounded-xl p-3 shadow-sm border border-gray-100 dark:border-gray-800 items-center transition-all hover:bg-gray-50 dark:hover:bg-[#232b38]">
+<div class="bg-gray-200 dark:bg-gray-700 bg-center bg-no-repeat bg-cover rounded-lg size-[64px] shrink-0" data-alt="Typography based logo for specialized printing service" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBYNWFnstY-o-3TqwqPQ04KqnvJNjXDbTKX-bnF9Zcxp6AZjyAOStdcyi7UrytI_7wfPeFbWCGSJxPbiISZjulSJRVPlOPaUnQ_1ztZHnDji4F3etHs2b5WtkD_oDUwxUBLolnvGKoiT-iIkzxt4FT5OWSMVninGd3ekloqZrvanQEd4zs_gzsgoBOxM3nLd5O1Xe3LPMBHgAer0t89qm-WAeO2jmPJ8F17YaoVqaIlM3a1_P1cAWikjfFTC8gAnLH7qJZAj8on-N4");'>
+</div>
+<div class="flex flex-1 flex-col justify-center gap-1 min-w-0">
+<h3 class="text-gray-900 dark:text-white text-base font-semibold leading-normal truncate">زرین چاپ</h3>
+<div class="flex items-center gap-1 text-gray-500 dark:text-gray-400 text-xs">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+<span class="truncate" data-location="Tehran">بازار، پانزده خرداد</span>
+</div>
+<p class="text-gray-500 dark:text-gray-400 text-xs truncate mt-0.5">خدمات: چاپ پارچه، پرچم، بنر عریض</p>
+</div>
+<div class="shrink-0 pl-1">
+<span class="material-symbols-outlined text-gray-400 group-hover:text-gray-600 dark:group-hover:text-gray-200 transition-colors" style="font-size: 24px;">chevron_left</span>
+</div>
+</div>
+<!-- Standard Item 4 -->
+<div class="group flex gap-4 bg-surface-light dark:bg-surface-dark rounded-xl p-3 shadow-sm border border-gray-100 dark:border-gray-800 items-center transition-all hover:bg-gray-50 dark:hover:bg-[#232b38]">
+<div class="bg-gray-200 dark:bg-gray-700 bg-center bg-no-repeat bg-cover rounded-lg size-[64px] shrink-0" data-alt="Geometric shape logo for technical print shop" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDQfJIsPM1TnB0jvgLKX-Y6zayylikbzfA0eC_G5brs8n4lokRKiKgqKbYE8iL1-eokaR7NF87EQThzUwFehcr_c7IATlddNrYw34B1mNMRlS8gCNTSqK2UCSYMT7_hs3PanSQZRJnIkiFjoCYn-KQT1Zp8jVQYv85qGoo6VESiT8JgabE1SIhISUBnceb4sLBAPqtJ7PIdOo4iwmDvUHCfRfsmEno9bk2jgf4E-OvmGzUvZWdEXJZBO8pbrlrhGQ9LUHXZA1OdaVI");'>
+</div>
+<div class="flex flex-1 flex-col justify-center gap-1 min-w-0">
+<h3 class="text-gray-900 dark:text-white text-base font-semibold leading-normal truncate">تکنیک برتر</h3>
+<div class="flex items-center gap-1 text-gray-500 dark:text-gray-400 text-xs">
+<span class="material-symbols-outlined text-[14px]">location_on</span>
+<span class="truncate" data-location="Tehran">ولیعصر، نرسیده به فاطمی</span>
+</div>
+<p class="text-gray-500 dark:text-gray-400 text-xs truncate mt-0.5">خدمات: پلات، لمینت، چاپ دیجیتال</p>
+</div>
+<div class="shrink-0 pl-1">
+<span class="material-symbols-outlined text-gray-400 group-hover:text-gray-600 dark:group-hover:text-gray-200 transition-colors" style="font-size: 24px;">chevron_left</span>
+</div>
+</div>
+</div>
+<!-- Floating Action Button (Optional for business owners) -->
+<button class="fixed bottom-6 left-6 shadow-lg shadow-primary/30 bg-primary hover:bg-blue-600 text-white rounded-full p-4 flex items-center justify-center transition-transform hover:scale-105 active:scale-95 z-50">
+<span class="material-symbols-outlined" style="font-size: 24px;">add_business</span>
+</button>
+</div>
+</body></html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html class="dark" dir="rtl" lang="fa"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>پروفایل کاربر - Cemetery App</title>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700&amp;family=Noto+Sans+Arabic:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1152d4",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                        "card-dark": "#1c1f27",
+                        "button-dark": "#282e39",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "Noto Sans Arabic", "sans-serif"],
+                        "body": ["Public Sans", "Noto Sans Arabic", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Public Sans', 'Noto Sans Arabic', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white min-h-screen flex flex-col overflow-x-hidden">
+<header class="sticky top-0 z-50 bg-background-light dark:bg-background-dark border-b border-gray-200 dark:border-gray-800">
+<div class="flex items-center p-4 justify-between h-16">
+<button class="flex size-10 items-center justify-center rounded-full hover:bg-gray-200 dark:hover:bg-white/10 transition-colors">
+<span class="material-symbols-outlined text-slate-900 dark:text-white">chevron_right</span>
+</button>
+<h2 class="text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center">پروفایل کاربری</h2>
+<button class="flex items-center justify-center gap-1 rounded-full px-2 py-1 hover:bg-red-500/10 transition-colors group">
+<span class="text-red-600 dark:text-red-400 text-sm font-bold leading-normal tracking-[0.015em]">خروج</span>
+<span class="material-symbols-outlined text-red-600 dark:text-red-400 text-[20px]">logout</span>
+</button>
+</div>
+</header>
+<main class="flex-1 flex flex-col gap-6 pb-6">
+<section class="flex flex-col items-center pt-6 px-4">
+<div class="relative mb-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full h-28 w-28 border-4 border-white dark:border-[#282e39] shadow-lg" data-alt="Close up portrait of a man looking friendly" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBaFjHBJQme8PnPrNQgW1iloVaTZvQCCoigx8D635TVKEYfoITth8zzeUdqfqyV3Y5GfBqpHdcNDejhLbbBWtOmXP1EyaoBT3GIXh6Al4_WlGhPY6DbLitayrCzXHcfWMes4iA3pkKz3sOAnZWfS9UjGLACPv7hmbbWbIXIuFe72QEn54Wlt-mXHZAwZ_bkmWcQi7-iA_rWs2hkOTxkRVSk1KfBtBQ6CeWj58qedyg0tVidg1sAsQmRHL16Mz2pRwotxImKptEd39g");'>
+</div>
+<button class="absolute bottom-0 left-0 bg-primary text-white rounded-full p-1.5 shadow-md border-2 border-white dark:border-[#101622] flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">photo_camera</span>
+</button>
+</div>
+<div class="flex flex-col items-center justify-center">
+<h1 class="text-2xl font-bold leading-tight tracking-[-0.015em] text-center mb-1 text-slate-900 dark:text-white">علی رضایی</h1>
+<p class="text-slate-500 dark:text-gray-300 text-sm font-medium leading-normal text-center bg-gray-200 dark:bg-gray-800 px-3 py-1 rounded-full">
+                    عضویت از فروردین ۱۴۰۲
+                </p>
+</div>
+</section>
+<section class="px-4">
+<div class="grid grid-cols-3 gap-3">
+<button class="flex flex-col items-center justify-center gap-2 h-20 rounded-xl bg-white dark:bg-card-dark shadow-sm hover:bg-gray-50 dark:hover:bg-[#2e3442] transition-colors border border-gray-100 dark:border-gray-800">
+<span class="material-symbols-outlined text-primary dark:text-blue-400 text-[24px]">edit</span>
+<span class="text-xs font-bold text-slate-700 dark:text-gray-200">ویرایش</span>
+</button>
+<button class="flex flex-col items-center justify-center gap-2 h-20 rounded-xl bg-white dark:bg-card-dark shadow-sm hover:bg-gray-50 dark:hover:bg-[#2e3442] transition-colors border border-gray-100 dark:border-gray-800">
+<span class="material-symbols-outlined text-primary dark:text-blue-400 text-[24px]">lock</span>
+<span class="text-xs font-bold text-slate-700 dark:text-gray-200">امنیت</span>
+</button>
+<button class="flex flex-col items-center justify-center gap-2 h-20 rounded-xl bg-white dark:bg-card-dark shadow-sm hover:bg-gray-50 dark:hover:bg-[#2e3442] transition-colors border border-gray-100 dark:border-gray-800">
+<span class="material-symbols-outlined text-primary dark:text-blue-400 text-[24px]">settings</span>
+<span class="text-xs font-bold text-slate-700 dark:text-gray-200">تنظیمات</span>
+</button>
+</div>
+</section>
+<section class="sticky top-16 z-40 bg-background-light dark:bg-background-dark pt-2">
+<div class="flex border-b border-gray-300 dark:border-gray-800 px-4">
+<button class="flex-1 pb-3 pt-2 border-b-[3px] border-primary dark:border-blue-400 text-primary dark:text-blue-400 relative transition-colors">
+<span class="text-sm font-bold block text-center">آگهی‌های من</span>
+</button>
+<button class="flex-1 pb-3 pt-2 border-b-[3px] border-transparent text-slate-500 dark:text-gray-400 hover:text-slate-700 dark:hover:text-gray-200 transition-colors relative">
+<span class="text-sm font-bold block text-center">نشان‌شده‌ها</span>
+</button>
+</div>
+</section>
+<section class="px-4 flex flex-col gap-4">
+<div class="flex flex-col sm:flex-row items-stretch gap-4 rounded-xl bg-white dark:bg-card-dark p-4 shadow-sm border border-gray-100 dark:border-gray-800">
+<div class="w-full sm:w-24 h-32 sm:h-auto bg-center bg-no-repeat bg-cover rounded-lg shrink-0 relative" data-alt="Portrait of an elderly man with a gentle smile" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDOFcYRfECnAIgNsUACGGPCDLBnugGu1DQsRG2INg3fyjUoAoMWjT6UaSuDHul2nxGWEDlnO-h-xSTa7vghC7MGH_HPL2z_zKZprvzDH-4xFB1FXmCn3QGgWInEPjqLAqNnahDN-FEkbDZA5WTfJtjgKH0hjGQynf8pak-vaxlHP1xHbpuSzCG0bPxK4V0IxylM8Sfczest5wzVthkU0w7MQ0hGZy7HM8LSCRhW7BV6cH6_MPzXa9uAvUar3stFG39igp3rXQOqMhg");'>
+<div class="absolute top-2 right-2 bg-green-500/90 text-white text-[10px] font-bold px-2 py-0.5 rounded-md backdrop-blur-sm sm:hidden">
+                        فعال
+                    </div>
+</div>
+<div class="flex flex-1 flex-col justify-between gap-3">
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-start">
+<h3 class="text-slate-900 dark:text-white text-base font-bold leading-tight line-clamp-1">مرحوم حسن احمدی</h3>
+<span class="hidden sm:inline-block text-green-600 dark:text-green-400 text-xs font-bold bg-green-100 dark:bg-green-900/30 px-2 py-1 rounded-md">فعال</span>
+</div>
+<div class="flex items-center gap-1 text-slate-500 dark:text-gray-400 text-xs mt-1">
+<span class="material-symbols-outlined text-[16px]">calendar_today</span>
+<span>تاریخ فوت: ۱۰ فروردین ۱۴۰۳</span>
+</div>
+<div class="flex items-center gap-1 text-slate-500 dark:text-gray-400 text-xs">
+<span class="material-symbols-outlined text-[16px]">location_on</span>
+<span>قطعه ۲۰۲، ردیف ۴، شماره ۱۲</span>
+</div>
+</div>
+<div class="flex gap-2 mt-2">
+<button class="flex-1 flex items-center justify-center gap-1.5 h-9 rounded-lg bg-primary hover:bg-blue-600 dark:hover:bg-blue-500 text-white text-sm font-medium transition-colors">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+<span>مدیریت</span>
+</button>
+<button class="flex items-center justify-center w-9 h-9 rounded-lg bg-gray-100 dark:bg-gray-800 text-slate-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+<span class="material-symbols-outlined text-[18px]">share</span>
+</button>
+</div>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row items-stretch gap-4 rounded-xl bg-white dark:bg-card-dark p-4 shadow-sm border border-gray-100 dark:border-gray-800 opacity-90">
+<div class="w-full sm:w-24 h-32 sm:h-auto bg-center bg-no-repeat bg-cover rounded-lg shrink-0 relative grayscale-[0.3]" data-alt="Simple floral pattern background used as placeholder" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCtXLkuzZwHtsKeajrCJUn0em2HAcCrJoxdI1ZczKhp81MMkKwJYIOTi_R4FxIwTjC5oLwKrI62mfdkIvCSwNBF9yoO_v_c98UFlXMwj27ebIUUnKw2jv17kBX44IT-kEnjloADNble-x3w06o-u9MOKUKzjuwBXSduOhG2MRk8GyVz7sKFwlFCGVMaFmvdof4fL39mbIHMYxhx2yqZXvGUx8FHpxvsKfbgdUp6KITuacYTM3GTDyIRninNkM_5DA9bjX_b0gACab0");'>
+<div class="absolute top-2 right-2 bg-yellow-500/90 text-black text-[10px] font-bold px-2 py-0.5 rounded-md backdrop-blur-sm sm:hidden">
+                        در انتظار تایید
+                    </div>
+</div>
+<div class="flex flex-1 flex-col justify-between gap-3">
+<div class="flex flex-col gap-1">
+<div class="flex justify-between items-start">
+<h3 class="text-slate-900 dark:text-white text-base font-bold leading-tight line-clamp-1">مرحومه زهرا کریمی</h3>
+<span class="hidden sm:inline-block text-yellow-700 dark:text-yellow-400 text-xs font-bold bg-yellow-100 dark:bg-yellow-900/30 px-2 py-1 rounded-md">در انتظار تایید</span>
+</div>
+<div class="flex items-center gap-1 text-slate-500 dark:text-gray-400 text-xs mt-1">
+<span class="material-symbols-outlined text-[16px]">calendar_today</span>
+<span>تاریخ فوت: ۱۵ اردیبهشت ۱۴۰۳</span>
+</div>
+<div class="flex items-center gap-1 text-slate-500 dark:text-gray-400 text-xs">
+<span class="material-symbols-outlined text-[16px]">hourglass_empty</span>
+<span>مدارک در حال بررسی</span>
+</div>
+</div>
+<div class="flex gap-2 mt-2">
+<button class="flex-1 flex items-center justify-center gap-1.5 h-9 rounded-lg bg-gray-100 dark:bg-gray-800 text-slate-700 dark:text-white text-sm font-medium hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+<span class="material-symbols-outlined text-[18px]">visibility</span>
+<span>مشاهده</span>
+</button>
+<button class="flex items-center justify-center w-9 h-9 rounded-lg bg-gray-100 dark:bg-gray-800 text-red-500 dark:text-red-400 hover:bg-red-50 dark:hover:bg-red-900/20 transition-colors">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<div class="fixed bottom-6 left-6 z-50">
+<button class="flex items-center justify-center h-14 w-14 rounded-full bg-primary hover:bg-blue-600 text-white shadow-lg shadow-blue-900/20 transition-transform hover:scale-105 active:scale-95">
+<span class="material-symbols-outlined text-[28px]">add</span>
+</button>
+</div>
+
+</body></html>

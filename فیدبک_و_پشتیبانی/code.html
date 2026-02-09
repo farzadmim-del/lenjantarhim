@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<html class="dark" dir="rtl" lang="fa"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>فیدبک و پشتیبانی</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1152d4",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "Noto Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>/* Custom scrollbar for better aesthetics in dark mode */
+::-webkit-scrollbar {
+    width: 6px
+    }
+::-webkit-scrollbar-track {
+    background: #101622
+    }
+::-webkit-scrollbar-thumb {
+    background: #3b4354;
+    border-radius: 3px
+    }
+/* Select arrow replacement for custom styling */
+.custom-select {
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuDOzOrcE7HDjON94CSxH9GnXiuAIFoU2UGBwJrfFYleWF1jFFAwimCED7Jdv0krB4K6tyr5MAtgvPIhrQtAdI9IfsKu-H4Tak4JodhEu3DKVodFTKKPYSwYp9lWrRrXyg-fUCkN6UoNnNhxgepz2KLC2SvRJTooKlfAQp6YCq077rJxhyhzZ2Mo1fRSTsTyKx7GUwQfClui3shXwgHHZDAG63SR_HOXU_5rlbafJDrbEO9Z2eoyRIjyEQQYCO6Ns2IBV1RxvVUaVhY);
+    background-position: left 0.5rem center;
+    background-repeat: no-repeat;
+    background-size: 1.5em 1.5em;
+    padding-left: 2.5rem;
+    padding-right: 1rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none
+    }</style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display antialiased">
+<div class="relative flex h-full min-h-screen w-full flex-col overflow-x-hidden">
+<!-- Header -->
+<header class="sticky top-0 z-20 bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-md border-b border-gray-200 dark:border-gray-800 p-4 pb-2">
+<div class="flex items-center justify-between">
+<button class="text-[#111318] dark:text-white flex size-12 shrink-0 items-center justify-center rounded-full hover:bg-black/5 dark:hover:bg-white/10 transition-colors">
+<span class="material-symbols-outlined text-[24px]">arrow_forward</span>
+</button>
+<h2 class="text-[#111318] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pr-12">
+                    فیدبک و پشتیبانی
+                </h2>
+</div>
+</header>
+<main class="flex-1 flex flex-col p-4 gap-6 max-w-lg mx-auto w-full">
+<!-- Hero / Intro -->
+<div class="text-center pt-2">
+<div class="mx-auto bg-primary/20 size-16 rounded-full flex items-center justify-center mb-4">
+<span class="material-symbols-outlined text-primary text-[32px]">support_agent</span>
+</div>
+<h1 class="text-[#111318] dark:text-white text-2xl font-bold mb-2">چطور می‌توانیم کمک کنیم؟</h1>
+<p class="text-[#637588] dark:text-[#9da6b9] text-base font-normal leading-normal px-4">
+                    نظرات و مشکلات خود را با ما در میان بگذارید تا بتوانیم خدمات بهتری ارائه دهیم.
+                </p>
+</div>
+<!-- Feedback Form -->
+<div class="bg-white dark:bg-[#1c1f27] rounded-xl border border-gray-200 dark:border-[#3b4354] p-5 shadow-sm">
+<h3 class="text-[#111318] dark:text-white font-bold text-lg mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-xl">edit_note</span>
+                    ارسال پیام
+                </h3>
+<div class="flex flex-col gap-4">
+<!-- Name Input -->
+<label class="flex flex-col flex-1">
+<p class="text-[#111318] dark:text-white text-sm font-medium leading-normal pb-2">نام و نام خانوادگی</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#111318] dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-gray-300 dark:border-[#3b4354] bg-[#f8fafc] dark:bg-[#111318] focus:border-primary h-12 placeholder:text-[#9da6b9] px-4 text-base font-normal leading-normal transition-all" placeholder="مثال: علی محمدی" value=""/>
+</label>
+<!-- Contact Input -->
+<label class="flex flex-col flex-1">
+<p class="text-[#111318] dark:text-white text-sm font-medium leading-normal pb-2">شماره تماس یا ایمیل</p>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#111318] dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-gray-300 dark:border-[#3b4354] bg-[#f8fafc] dark:bg-[#111318] focus:border-primary h-12 placeholder:text-[#9da6b9] px-4 text-base font-normal leading-normal text-right transition-all" dir="ltr" placeholder="0912..." value=""/>
+</label>
+<!-- Subject Select -->
+<label class="flex flex-col flex-1">
+<p class="text-[#111318] dark:text-white text-sm font-medium leading-normal pb-2">موضوع پیام</p>
+<div class="relative">
+<select class="custom-select form-select w-full rounded-lg text-[#111318] dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-gray-300 dark:border-[#3b4354] bg-[#f8fafc] dark:bg-[#111318] focus:border-primary h-12 px-4 text-base font-normal leading-normal transition-all">
+<option disabled="" selected="" value="">انتخاب کنید</option>
+<option value="bug">گزارش مشکل فنی</option>
+<option value="suggestion">پیشنهاد و انتقاد</option>
+<option value="support">درخواست پشتیبانی</option>
+<option value="other">سایر موارد</option>
+</select>
+</div>
+</label>
+<!-- Message Textarea -->
+<label class="flex flex-col flex-1">
+<p class="text-[#111318] dark:text-white text-sm font-medium leading-normal pb-2">متن پیام</p>
+<textarea class="form-textarea flex w-full min-w-0 flex-1 resize-y rounded-lg text-[#111318] dark:text-white focus:outline-0 focus:ring-2 focus:ring-primary/50 border border-gray-300 dark:border-[#3b4354] bg-[#f8fafc] dark:bg-[#111318] focus:border-primary min-h-[120px] placeholder:text-[#9da6b9] p-4 text-base font-normal leading-normal transition-all" placeholder="توضیحات خود را اینجا بنویسید..."></textarea>
+</label>
+<!-- Submit Button -->
+<button class="mt-2 flex w-full items-center justify-center rounded-lg bg-primary hover:bg-blue-700 text-white font-bold h-12 transition-all shadow-lg shadow-primary/20 active:scale-[0.98]">
+                        ارسال دیدگاه
+                    </button>
+</div>
+</div>
+<!-- Divider -->
+<div class="relative py-2">
+<div class="absolute inset-0 flex items-center">
+<div class="w-full border-t border-gray-200 dark:border-gray-800"></div>
+</div>
+<div class="relative flex justify-center text-sm">
+<span class="px-4 bg-background-light dark:bg-background-dark text-gray-500 dark:text-gray-400">یا ارتباط مستقیم</span>
+</div>
+</div>
+<!-- Direct Contact Options -->
+<div class="grid grid-cols-2 gap-4">
+<a class="flex flex-col items-center justify-center p-4 rounded-xl bg-white dark:bg-[#1c1f27] border border-gray-200 dark:border-[#3b4354] hover:border-primary/50 dark:hover:border-primary/50 transition-all group" href="#">
+<div class="bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400 p-3 rounded-full mb-3 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">call</span>
+</div>
+<span class="text-[#111318] dark:text-white font-medium text-sm">تماس با پشتیبانی</span>
+<span class="text-xs text-gray-500 dark:text-gray-400 mt-1 ltr" dir="ltr">021-12345678</span>
+</a>
+<a class="flex flex-col items-center justify-center p-4 rounded-xl bg-white dark:bg-[#1c1f27] border border-gray-200 dark:border-[#3b4354] hover:border-primary/50 dark:hover:border-primary/50 transition-all group" href="#">
+<div class="bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 p-3 rounded-full mb-3 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<span class="text-[#111318] dark:text-white font-medium text-sm">ارسال ایمیل</span>
+<span class="text-xs text-gray-500 dark:text-gray-400 mt-1">support@app.com</span>
+</a>
+</div>
+<!-- FAQ Section Link -->
+<a class="flex items-center justify-between p-4 rounded-xl bg-white dark:bg-[#1c1f27] border border-gray-200 dark:border-[#3b4354] hover:bg-gray-50 dark:hover:bg-[#252932] transition-colors" href="#">
+<div class="flex items-center gap-4">
+<div class="bg-purple-100 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 p-2.5 rounded-lg">
+<span class="material-symbols-outlined">quiz</span>
+</div>
+<div class="flex flex-col">
+<span class="text-[#111318] dark:text-white font-bold text-sm">سوالات متداول (FAQ)</span>
+<span class="text-xs text-gray-500 dark:text-gray-400 mt-0.5">پاسخ به پرسش‌های پرتکرار کاربران</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-gray-400 dark:text-gray-500 rtl:rotate-180">chevron_left</span>
+</a>
+<!-- Footer Note -->
+<div class="pb-6 pt-2 text-center">
+<p class="text-xs text-gray-400 dark:text-gray-600">
+                    تیم پشتیبانی ما ۲۴ ساعته در کنار شماست.
+                </p>
+<p class="text-[10px] text-gray-300 dark:text-gray-700 mt-1">Version 1.2.0</p>
+</div>
+</main>
+</div>
+</body></html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html class="dark" dir="rtl" lang="fa"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>ورود/ثبت‌نام - یادگار</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#60a5fa", 
+                        "primary-btn": "#3b82f6",
+                        "primary-hover": "#2563eb",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#020617",
+                        "surface-dark": "#111827",
+                        "input-dark": "#1f2937",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "ui-sans-serif", "system-ui"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>.form-input {
+            text-align: right;
+        }
+    </style>
+<style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-gray-100 font-display min-h-screen flex items-center justify-center p-4 selection:bg-primary selection:text-white transition-colors duration-300">
+<div class="w-full max-w-[400px] mx-auto bg-white dark:bg-surface-dark rounded-2xl shadow-2xl overflow-hidden relative border border-slate-200 dark:border-gray-800 transition-colors duration-300">
+<div class="relative h-48 w-full overflow-hidden">
+<div class="absolute inset-0 bg-center bg-cover" data-alt="Peaceful dark sky with subtle light representing memory and peace" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDv1U-XE8QVhakYOC1cOMm2GnHdj-3m0e7UA9alYVo2YtKZQQpRFTnr3Loqo7VzoPrUX-wfeTQKGAIbb3ZlzRZT3O-6B62GPlpzPYD9Pcv3rqRz-wqLgdQvHvNWXvZw_utLV7-yfV1KckgwYMUDGCJ__F2a9ygoEAEPUUijTMZPaKfa4e8nkAePtScERyAN0DOfIHvyJLjNGOxFQcS_qaGjO5vcPP2ODzu8W-hDBrVdG1dpoEB7WnsProNeqZAFn3oxWFMCfBV3AxY');">
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-white dark:from-surface-dark to-transparent duration-300"></div>
+<div class="absolute bottom-4 right-4 left-4 z-10 text-center">
+<div class="w-12 h-12 bg-primary-btn/20 backdrop-blur-md rounded-full flex items-center justify-center mx-auto mb-3 border border-white/10 shadow-lg">
+<span class="material-symbols-outlined text-primary-btn text-3xl">local_florist</span>
+</div>
+<h2 class="text-2xl font-bold tracking-tight text-slate-900 dark:text-white drop-shadow-sm">به یادگار خوش آمدید</h2>
+<p class="text-sm text-slate-500 dark:text-gray-400 mt-1">یادبود مجازی عزیزان آسمانی</p>
+</div>
+</div>
+<div class="px-6 pb-8 pt-4">
+<div class="flex p-1 bg-slate-100 dark:bg-black/20 rounded-xl mb-6 border border-transparent dark:border-gray-800">
+<button class="flex-1 py-2 text-sm font-medium rounded-lg shadow-sm bg-white dark:bg-gray-800 text-slate-900 dark:text-white transition-all duration-200 ring-1 ring-black/5 dark:ring-white/5">
+                    ورود
+                </button>
+<button class="flex-1 py-2 text-sm font-medium rounded-lg text-slate-500 dark:text-gray-400 hover:text-slate-700 dark:hover:text-gray-200 transition-all duration-200">
+                    ثبت‌نام
+                </button>
+</div>
+<form class="space-y-5" onsubmit="event.preventDefault();">
+<div class="space-y-2">
+<label class="block text-sm font-medium text-slate-700 dark:text-gray-300" for="identity">
+                        شماره موبایل یا ایمیل
+                    </label>
+<div class="relative group">
+<div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none text-slate-400 dark:text-gray-500 group-focus-within:text-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">person</span>
+</div>
+<input class="form-input block w-full rounded-lg border-slate-300 dark:border-gray-700 bg-slate-50 dark:bg-input-dark text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-gray-500 focus:border-primary-btn focus:ring-primary-btn dark:focus:border-primary dark:focus:ring-primary pr-10 pl-3 py-3 text-right transition-all" id="identity" placeholder="مثال: 09123456789" type="text"/>
+</div>
+</div>
+<div class="space-y-2">
+<div class="flex items-center justify-between">
+<label class="block text-sm font-medium text-slate-700 dark:text-gray-300" for="password">
+                            رمز عبور
+                        </label>
+</div>
+<div class="relative group">
+<div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none text-slate-400 dark:text-gray-500 group-focus-within:text-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">lock</span>
+</div>
+<input class="form-input block w-full rounded-lg border-slate-300 dark:border-gray-700 bg-slate-50 dark:bg-input-dark text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-gray-500 focus:border-primary-btn focus:ring-primary-btn dark:focus:border-primary dark:focus:ring-primary pr-10 pl-3 py-3 text-right transition-all" id="password" placeholder="••••••••" type="password"/>
+<div class="absolute inset-y-0 left-0 flex items-center pl-3 cursor-pointer text-slate-400 hover:text-primary dark:text-gray-500 dark:hover:text-primary transition-colors">
+<span class="material-symbols-outlined text-[20px]">visibility</span>
+</div>
+</div>
+<div class="text-left mt-1">
+<a class="text-xs font-medium text-primary-btn dark:text-primary hover:text-blue-700 dark:hover:text-blue-400 transition-colors" href="#">
+                            فراموشی رمز عبور؟
+                        </a>
+</div>
+</div>
+<button class="w-full flex justify-center py-3.5 px-4 border border-transparent rounded-xl shadow-lg shadow-blue-500/20 text-sm font-bold text-white bg-primary-btn hover:bg-primary-hover focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-btn dark:focus:ring-offset-surface-dark transition-all duration-200" type="submit">
+                    ورود به حساب کاربری
+                </button>
+<div class="relative py-2">
+<div class="absolute inset-0 flex items-center">
+<div class="w-full border-t border-slate-200 dark:border-gray-700"></div>
+</div>
+<div class="relative flex justify-center text-sm">
+<span class="px-2 bg-white dark:bg-surface-dark text-slate-500 dark:text-gray-400 transition-colors">یا ورود با</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<button class="flex items-center justify-center px-4 py-2.5 border border-slate-200 dark:border-gray-700 rounded-lg shadow-sm bg-white dark:bg-gray-800 text-sm font-medium text-slate-700 dark:text-gray-200 hover:bg-slate-50 dark:hover:bg-gray-700 transition-colors" type="button">
+<img alt="Google Logo" class="h-5 w-5 ml-2" data-alt="Google logo icon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkPzSeDFpndepT4wvW-0B5npke8ugadaLF2SzzOOK7SBZ7GbTX7qC19GjwtkbpCZq_euAUsseaZ0tQ_ye33O5yr59afFSzKgslFzUb3-KUXRqaAy5Vkn1GWP4YDxF2DExO8xh7Pxh1m_0WgkW_VI1DNtY0MUmYNq36eS56SOkIvOXvO3EOGR8wJoKhKGAQhqLq-u1e6itf2aYJrxR4hs-lxPiuzb0Sz7LxXK_8vyvtI157RsalPiYiJwONfyQm-erPYlVp2Kpy-04"/>
+<span>گوگل</span>
+</button>
+<button class="flex items-center justify-center px-4 py-2.5 border border-slate-200 dark:border-gray-700 rounded-lg shadow-sm bg-white dark:bg-gray-800 text-sm font-medium text-slate-700 dark:text-gray-200 hover:bg-slate-50 dark:hover:bg-gray-700 transition-colors" type="button">
+<img alt="Apple Logo" class="h-5 w-5 ml-2 dark:invert" data-alt="Apple logo icon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDorDLr2DnjOk4Nplm64bQohYhpQv9Zz6EYO8dD0guWvQ6tlaJ4MTN_WzSJLr7ESBLsZKuIx5Iwd5Y9RpreRgWLnE99C0avnhnsVyZjvfWk5O2pJqB54sRktuwwrurlBDu1wXhDOqfQg3DFTyBRSU-sWhOWGLtB6g2UOq-qReF90I2-QdAeqWotGRy8fN2CgSQUhi3Q4Wr-06X7Ner0-LybMoWIn5U5Pa1_09Be0eUkne0vorpVw1dE246L1E5Mx2pU3Rqwz6JyqDs"/>
+<span>اپل</span>
+</button>
+</div>
+</form>
+</div>
+<div class="h-1.5 w-full bg-gradient-to-r from-transparent via-primary-btn to-transparent opacity-50 dark:opacity-70"></div>
+</div>
+
+</body></html>

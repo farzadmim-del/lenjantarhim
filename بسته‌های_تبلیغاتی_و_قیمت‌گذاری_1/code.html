@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<html class="dark" dir="rtl" lang="fa"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>بسته‌های تبلیغاتی</title>
+<!-- Google Fonts: Public Sans & Noto Sans Arabic (for Persian) -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100..900&amp;family=Public+Sans:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1152d4",
+                        "background-light": "#f6f6f8",
+                        "background-dark": "#101622",
+                        "surface-dark": "#1c1f27",
+                        "surface-light": "#ffffff",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "Noto Sans Arabic", "sans-serif"],
+                        "body": ["Noto Sans Arabic", "sans-serif"],
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: 'Noto Sans Arabic', 'Public Sans', sans-serif;
+        }
+        /* Custom scrollbar for cleaner look */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #3b4354;
+            border-radius: 3px;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white transition-colors duration-200">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+<!-- TopAppBar -->
+<div class="flex items-center bg-background-light dark:bg-background-dark p-4 pb-2 justify-between sticky top-0 z-50 border-b border-slate-200 dark:border-slate-800">
+<div class="text-slate-900 dark:text-white flex size-12 shrink-0 items-center justify-center cursor-pointer rounded-full hover:bg-black/5 dark:hover:bg-white/10 transition-colors">
+<span class="material-symbols-outlined">arrow_forward</span>
+</div>
+<h2 class="text-slate-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pr-12 font-display">
+                تعرفه تبلیغات
+            </h2>
+</div>
+<!-- HeadlineText -->
+<div class="flex flex-col items-center">
+<h2 class="text-slate-900 dark:text-white tracking-light text-[26px] font-bold leading-tight px-6 text-center pb-2 pt-6 font-display">
+                رشد کسب‌وکار شما
+            </h2>
+<p class="text-slate-500 dark:text-slate-400 text-base font-normal leading-normal pb-6 px-6 text-center max-w-md">
+                در لحظات حساس، خدمات خود را به خانواده‌های داغدار معرفی کنید و در کنار آن‌ها باشید.
+            </p>
+</div>
+<!-- PricingCards -->
+<div class="w-full max-w-3xl mx-auto px-4 pb-4">
+<div class="flex flex-col gap-4">
+<!-- Basic Plan -->
+<div class="flex flex-col gap-4 rounded-xl border border-slate-200 dark:border-[#3b4354] bg-surface-light dark:bg-surface-dark p-5 shadow-sm">
+<div class="flex flex-col gap-1">
+<h1 class="text-slate-900 dark:text-white text-lg font-bold leading-tight">پایه</h1>
+<p class="flex items-baseline gap-1 mt-1">
+<span class="text-slate-900 dark:text-white text-2xl font-black leading-tight tracking-[-0.033em] font-display">۵۰۰,۰۰۰ تومان</span>
+<span class="text-slate-500 dark:text-slate-400 text-sm font-bold leading-tight">/ ماهانه</span>
+</p>
+</div>
+<div class="flex flex-col gap-3 mt-2">
+<div class="text-sm font-normal leading-normal flex gap-3 text-slate-700 dark:text-slate-300 items-center">
+<span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
+                            نمایش در نتایج جستجو
+                        </div>
+<div class="text-sm font-normal leading-normal flex gap-3 text-slate-700 dark:text-slate-300 items-center">
+<span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
+                            مدت اعتبار: ۱ ماه
+                        </div>
+<div class="text-sm font-normal leading-normal flex gap-3 text-slate-700 dark:text-slate-300 items-center">
+<span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
+                            تبلیغات متنی ساده
+                        </div>
+</div>
+<button class="flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-11 px-4 bg-slate-200 dark:bg-[#282e39] hover:bg-slate-300 dark:hover:bg-[#343b49] text-slate-900 dark:text-white text-sm font-bold leading-normal tracking-[0.015em] transition-colors mt-2">
+<span class="truncate">انتخاب بسته پایه</span>
+</button>
+</div>
+<!-- Special Plan (Recommended) -->
+<div class="relative flex flex-col gap-4 rounded-xl border-2 border-primary bg-surface-light dark:bg-surface-dark p-5 shadow-lg shadow-primary/10">
+<div class="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2">
+<span class="bg-primary text-white text-xs font-bold px-3 py-1 rounded-full shadow-sm">پیشنهاد ویژه</span>
+</div>
+<div class="flex flex-col gap-1 mt-1">
+<div class="flex items-center justify-between">
+<h1 class="text-primary text-lg font-bold leading-tight">ویژه</h1>
+</div>
+<p class="flex items-baseline gap-1 mt-1">
+<span class="text-slate-900 dark:text-white text-3xl font-black leading-tight tracking-[-0.033em] font-display">۱,۵۰۰,۰۰۰ تومان</span>
+<span class="text-slate-500 dark:text-slate-400 text-sm font-bold leading-tight">/ ۳ ماهه</span>
+</p>
+</div>
+<div class="flex flex-col gap-3 mt-2">
+<div class="text-sm font-normal leading-normal flex gap-3 text-slate-700 dark:text-slate-300 items-center">
+<span class="material-symbols-outlined text-primary text-[20px]">star</span>
+<span class="font-bold text-slate-900 dark:text-white">نمایش در صفحه اصلی (اسلایدر)</span>
+</div>
+<div class="text-sm font-normal leading-normal flex gap-3 text-slate-700 dark:text-slate-300 items-center">
+<span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
+                            مدت اعتبار: ۳ ماه
+                        </div>
+<div class="text-sm font-normal leading-normal flex gap-3 text-slate-700 dark:text-slate-300 items-center">
+<span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
+                            بنر تصویری + دکمه تماس مستقیم
+                        </div>
+<div class="text-sm font-normal leading-normal flex gap-3 text-slate-700 dark:text-slate-300 items-center">
+<span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
+                            اولویت نمایش بالاتر در جستجو
+                        </div>
+</div>
+<button class="flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-4 bg-primary hover:bg-blue-700 text-white text-base font-bold leading-normal tracking-[0.015em] shadow-md shadow-primary/20 transition-colors mt-2">
+<span class="truncate">انتخاب بسته ویژه</span>
+</button>
+</div>
+<!-- Gold Plan -->
+<div class="flex flex-col gap-4 rounded-xl border border-slate-200 dark:border-[#3b4354] bg-surface-light dark:bg-surface-dark p-5 shadow-sm">
+<div class="flex flex-col gap-1">
+<h1 class="text-amber-500 text-lg font-bold leading-tight flex items-center gap-2">
+                            طلایی
+                            <span class="material-symbols-outlined text-amber-500 text-[20px]">workspace_premium</span>
+</h1>
+<p class="flex items-baseline gap-1 mt-1">
+<span class="text-slate-900 dark:text-white text-2xl font-black leading-tight tracking-[-0.033em] font-display">۳,۰۰۰,۰۰۰ تومان</span>
+<span class="text-slate-500 dark:text-slate-400 text-sm font-bold leading-tight">/ ۶ ماهه</span>
+</p>
+</div>
+<div class="flex flex-col gap-3 mt-2">
+<div class="text-sm font-normal leading-normal flex gap-3 text-slate-700 dark:text-slate-300 items-center">
+<span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
+                            نمایش در تمام صفحات اپلیکیشن
+                        </div>
+<div class="text-sm font-normal leading-normal flex gap-3 text-slate-700 dark:text-slate-300 items-center">
+<span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
+                            مدت اعتبار: ۶ ماه
+                        </div>
+<div class="text-sm font-normal leading-normal flex gap-3 text-slate-700 dark:text-slate-300 items-center">
+<span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
+                            پشتیبانی از ویدیو تبلیغاتی
+                        </div>
+<div class="text-sm font-normal leading-normal flex gap-3 text-slate-700 dark:text-slate-300 items-center">
+<span class="material-symbols-outlined text-primary text-[20px]">check_circle</span>
+                            لینک مستقیم به وب‌سایت و اینستاگرام
+                        </div>
+</div>
+<button class="flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-11 px-4 bg-slate-200 dark:bg-[#282e39] hover:bg-slate-300 dark:hover:bg-[#343b49] text-slate-900 dark:text-white text-sm font-bold leading-normal tracking-[0.015em] transition-colors mt-2">
+<span class="truncate">انتخاب بسته طلایی</span>
+</button>
+</div>
+</div>
+</div>
+<!-- CTASection -->
+<div class="@container w-full max-w-3xl mx-auto mt-4">
+<div class="flex flex-col justify-end gap-6 px-4 py-8 @[480px]:gap-8 @[480px]:px-10 @[480px]:py-12 bg-slate-100 dark:bg-[#151a25] rounded-xl mx-4 mb-8">
+<div class="flex flex-col gap-3 text-center">
+<h1 class="text-slate-900 dark:text-white tracking-light text-xl font-bold leading-tight">
+                        نیاز به مشاوره اختصاصی دارید؟
+                    </h1>
+<p class="text-slate-600 dark:text-slate-400 text-sm font-normal leading-relaxed">
+                        برای دریافت پلن‌های سازمانی و مشاوره جهت بهترین بازدهی تبلیغات در حوزه خدمات ترحیم، با کارشناسان ما تماس بگیرید.
+                    </p>
+</div>
+<div class="flex flex-1 justify-center">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-transparent border-2 border-primary text-primary hover:bg-primary hover:text-white transition-colors text-sm font-bold leading-normal tracking-[0.015em] grow gap-2">
+<span class="material-symbols-outlined text-[20px]">call</span>
+<span class="truncate">تماس با واحد فروش</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Bottom Spacer for Safe Area -->
+<div class="h-8 bg-background-light dark:bg-background-dark"></div>
+</div>
+</body></html>
